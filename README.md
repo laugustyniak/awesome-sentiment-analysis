@@ -15,3 +15,15 @@ Also, a listed repository should be deprecated if:
 
 <!-- MarkdownTOC depth=4 -->
 
+- [Libraries](#lib)
+- [Papers](#papers)
+
+
+<!-- /MarkdownTOC -->
+
+<a name="lib" />
+## Libraries
+* [Spacy](https://spacy.io/) - Industrial-Strength Natural Language Processing in Python
+
+<a name="papers" />
+## Papers
