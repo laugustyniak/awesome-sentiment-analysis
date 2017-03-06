@@ -1,7 +1,8 @@
 # Awesome Sentiment Analysis
 
 A curated list of awesome sentiment analysis frameworks, libraries, 
-software (by language), and of course academic papers and methods. Inspired by 
+software (by language), and of course academic papers and methods. In 
+addition NLP lib useful in sentiment analysis. Inspired by 
 awesome-machine-learning.
 
 If you want to contribute to this list (please do), send me a pull request or
