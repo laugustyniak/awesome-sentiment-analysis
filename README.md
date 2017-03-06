@@ -23,7 +23,8 @@ Also, a listed repository should be deprecated if:
 
 <a name="lib" />
 ## Libraries
-* [Spacy](https://spacy.io/) - Industrial-Strength Natural Language Processing in Python
+* [Spacy](https://spacy.io/) - Industrial-Strength Natural Language 
+Processing in Python, one of the best and the fastest libs for NLP. spaCy excels at large-scale information extraction tasks. It's written from the ground up in carefully memory-managed Cython. Independent research has confirmed that spaCy is the fastest in the world. If your application needs to process entire web dumps, spaCy is the library you want to be using.
 
 <a name="papers" />
 ## Papers
