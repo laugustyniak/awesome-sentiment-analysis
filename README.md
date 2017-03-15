@@ -27,6 +27,7 @@ Also, a listed repository should be deprecated if:
 
 <a name="lib" />
 ## Libraries
+
 * [Python, Textlytics](https://github.com/laugustyniak/textlytics) - set of 
 sentiment analysis examples based on Amazon Data, SemEval, IMDB etc.
 
