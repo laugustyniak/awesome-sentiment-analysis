@@ -26,6 +26,7 @@ Also, a listed repository should be deprecated if:
 <!-- /MarkdownTOC -->
 
 <a name="lib" />
+
 ## Libraries
 
 * [Python, Textlytics](https://github.com/laugustyniak/textlytics) - set of 
@@ -73,6 +74,7 @@ processing text using computational linguistics.
 a machine learning based toolkit for the processing of natural language text. 
 
 <a name="tuts" />
+
 ## Tutorials
 
 * [SAS2015](https://github.com/laugustyniak/sas2015) iPython Notebook brief 
@@ -82,9 +84,11 @@ introduction to Sentiment Analysis in Python @Sentiment Analysis Symposium
 * [LingPipe Sentiment](http://alias-i.com/lingpipe/demos/tutorial/sentiment/read-me.html)
 
 <a name="papers" />
+
 ## Papers
 
 <a name="demos" />
+
 ## Demos
 
 * [Sentiment TreeBank](http://nlp.stanford.edu:8080/sentiment/rntnDemo.html)
@@ -99,6 +103,7 @@ example](http://sentiment.vivekn.com/)
 * [FormTitan](https://prediction.formtitan.com/sentiment-analysis)
 
 <a name="api" />
+
 ## API
 
 * [AlchemyAPI - IBM Watson](https://www.ibm.com/watson/developercloud/)
