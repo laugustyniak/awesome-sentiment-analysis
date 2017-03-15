@@ -42,8 +42,7 @@ ground up in carefully memory-managed Cython. Independent research has
 confirmed that spaCy is the fastest in the world. If your application needs 
 to process entire web dumps, spaCy is the library you want to be using.
 
-* [Python, TextBlob](https://textblob.readthedocs.io/en/dev/advanced_usage
-.html#sentiment-analyzers) - TextBlob allows you to specify which algorithms
+* [Python, TextBlob](https://textblob.readthedocs.io/en/dev/advanced_usage.html#sentiment-analyzers)- TextBlob allows you to specify which algorithms
  you want to use under the hood of its simple API.
 
 * [Python, pattern](http://www.clips.ua.ac.be/pages/pattern-en#sentiment) - 
