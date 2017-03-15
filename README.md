@@ -78,8 +78,7 @@ a machine learning based toolkit for the processing of natural language text.
 ## Tutorials
 
 * [SAS2015](https://github.com/laugustyniak/sas2015) iPython Notebook brief 
-introduction to Sentiment Analysis in Python @Sentiment Analysis Symposium 
-2015. Scikit-learn + BoW + SemEval Data.
+introduction to Sentiment Analysis in Python @Sentiment Analysis Symposium 2015. Scikit-learn + BoW + SemEval Data.
 
 * [LingPipe Sentiment](http://alias-i.com/lingpipe/demos/tutorial/sentiment/read-me.html)
 
