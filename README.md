@@ -17,6 +17,7 @@ Also, a listed repository should be deprecated if:
 <!-- MarkdownTOC depth=4 -->
 
 - [Libraries](#lib)
+- [Lexicons, Datasets, Word embeddings, and other resources](#data)
 - [Tutorials](#tuts)
 - [Papers](#papers)
 - [Demos](#demos)
@@ -72,6 +73,39 @@ processing text using computational linguistics.
 * [JAVA, OpenNLP](https://opennlp.apache.org/) - The Apache OpenNLP library is 
 a machine learning based toolkit for the processing of natural language text. 
 
+<a name="data"/>
+
+## Lexicons, Datasets, Word embeddings, and other resources
+
+* [AFINN: List of English words rated for valence](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010)
+
+* [SentiWordNet: Lexical resource devised for supporting sentiment analysis](http://sentiwordnet.isti.cnr.it/)
+[paper](https://www.researchgate.net/publication/220746537_SentiWordNet_30_An_Enhanced_Lexical_Resource_for_Sentiment_Analysis_and_Opinion_Mining)
+
+* [Stanford Sentiment Treebank: Sentiment dataset with fine-grained sentiment 
+annotations](http://nlp.stanford.edu/sentiment/code.html) [paper](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf)
+
+Word Embeddings:
+* [GloVe: Algorithm for obtaining word vectors. Pretrained word vectors 
+available for download](http://nlp.stanford.edu/projects/glove/) [paper](http://nlp.stanford.edu/pubs/glove.pdf)
+
+* [Word2Vec by Mikolov](https://code.google.com/archive/p/word2vec/) [paper](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+
+* [Word2Vec Python lib](https://github.com/RaRe-Technologies/gensim) - Google's
+ word2vec reimplementation written in Python (cython). There are also doc2vec 
+ and topic modelling method. 
+
+SemEval Challenges - International Workshop on Semantic Evaluation [web](http://aclweb.org/aclwiki/index.php?title=SemEval_3):
+* [SemEval2014](http://alt.qcri.org/semeval2014/index.php?id=tasks)
+
+* [SemEval2015](http://alt.qcri.org/semeval2015/index.php?id=tasks)
+
+* [SemEval2016](http://alt.qcri.org/semeval2016/index.php?id=tasks)
+
+* [SemEval2017](http://alt.qcri.org/semeval2017/index.php?id=tasks)
+
+* [SemEval2018](http://alt.qcri.org/semeval2018/) New challenge - 
+
 <a name="tuts" />
 
 ## Tutorials
@@ -105,6 +139,8 @@ example](http://sentiment.vivekn.com/)
 ## API
 
 * [AlchemyAPI - IBM Watson](https://www.ibm.com/watson/developercloud/)
+
+* [NL Google Cloud](https://cloud.google.com/natural-language/)
 
 * [www.sentimentanalysisonline](http://www.sentimentanalysisonline.com)
 
