@@ -33,7 +33,7 @@ Also, a listed repository should be deprecated if:
 * [Python, Textlytics](https://github.com/laugustyniak/textlytics) - set of 
 sentiment analysis examples based on Amazon Data, SemEval, IMDB etc.
 
-* [Polish Sentiment Model](https://github.com/riomus/polish-sentiment) - 
+* [Java, Polish Sentiment Model](https://github.com/riomus/polish-sentiment) - 
 Sentiment analysis for polish language using SVM and BoW - within Docker.
 
 * [Python, Spacy](https://spacy.io/) - Industrial-Strength Natural Language 
@@ -52,7 +52,7 @@ The pattern.en module contains a fast part-of-speech tagger for English
 analysis, tools for English verb conjugation and noun singularization & 
 pluralization, and a WordNet interface. 
 
-* [JAVA, CoreNLP by Stanford](http://stanfordnlp.github.io/CoreNLP/) - [Deeply 
+* [Java, CoreNLP by Stanford](http://stanfordnlp.github.io/CoreNLP/) - [Deeply 
 Moving: Deep Learning for Sentiment Analysis](http://nlp.stanford.edu/sentiment/).
 
 * [R, TM](http://cran.r-project.org/web/packages/tm/index) - R text mining 
@@ -60,9 +60,11 @@ module including tm.plugin.sentiment.
 
 * [Software, GATE](https://gate.ac.uk/sentiment/) - GATE is open source 
 
-* [JAVA, LingPipe](http://alias-i.com/lingpipe/) - LingPipe is tool kit for 
+* [Java, LingPipe](http://alias-i.com/lingpipe/) - LingPipe is tool kit for 
 
 * [Python, NLTK](http://www.nltk.org) - Natural Language Toolkit.
+
+* [C++, MITIE](https://github.com/mit-nlp/MITIE) - MIT Information Extraction
 
 * [Software, KNIME](https://www.knime.org/blog/sentiment-analysis)
 
@@ -77,19 +79,52 @@ a machine learning based toolkit for the processing of natural language text.
 
 ## Lexicons, Datasets, Word embeddings, and other resources
 
-* [AFINN: List of English words rated for valence](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010)
+Lexicons:
+* [AFINN](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) - List of English words rated for valence
 
-* [SentiWordNet: Lexical resource devised for supporting sentiment analysis](http://sentiwordnet.isti.cnr.it/)
-[paper](https://www.researchgate.net/publication/220746537_SentiWordNet_30_An_Enhanced_Lexical_Resource_for_Sentiment_Analysis_and_Opinion_Mining)
+* [SentiWordNet](http://sentiwordnet.isti.cnr.it/)
+[paper](https://www.researchgate.net/publication/220746537_SentiWordNet_30_An_Enhanced_Lexical_Resource_for_Sentiment_Analysis_and_Opinion_Mining) - Lexical resource based on WordNet
 
-* [Stanford Sentiment Treebank: Sentiment dataset with fine-grained sentiment 
-annotations](http://nlp.stanford.edu/sentiment/code.html) [paper](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf)
+Datasets:
+* [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/code.html) 
+[paper](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf) - Sentiment dataset with fine-grained sentiment 
+annotations. The Rotten Tomatoes movie review dataset is a corpus of movie 
+reviews used for sentiment analysis, originally collected by [Pang and Lee](https://arxiv.org/abs/cs/0506075). In their work on sentiment treebanks, 
+Socher et al. used Amazon's Mechanical Turk to create fine-grained labels
+ for all parsed phrases in the corpus. This competition presents a chance to
+  benchmark your sentiment-analysis ideas on the Rotten Tomatoes dataset. 
+  You are asked to label phrases on a scale of five values: negative, 
+  somewhat negative, neutral, somewhat positive, positive. Obstacles like 
+  sentence negation, sarcasm, terseness, language ambiguity, and many others
+   make this task very challenging.
+
+* [Amazon product dataset](http://jmcauley.ucsd.edu/data/amazon/) - This 
+dataset contains product reviews and metadata from Amazon, including 142.8 
+million reviews spanning May 1996 - July 2014. This dataset includes reviews
+ (ratings, text, helpfulness votes), product metadata (descriptions, 
+ category information, price, brand, and image features), and links (also 
+ viewed/also bought graphs).
+ 
+* [IMDB movies reviews dataset](http://ai.stanford.edu/~amaas/data/sentiment/) - This is a dataset for binary sentiment 
+classification containing substantially more data than previous benchmark 
+datasets. Authors provide a set of 25,000 highly polar movie reviews for 
+training, and 25,000 for testing.
+
+* [Sentiment Labelled Sentences Data Set](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences) The dataset contains sentences
+ labelled with positive or negative sentiment. This dataset was created for 
+ the Paper [From Group to Individual Labels using Deep Features, Kotzias et.
+  al,. KDD 2015](http://mdenil.com/media/papers/2015-deep-multi-instance-learning.pdf). It contains sentences labelled with positive or negative 
+  sentiment. Score is either 1 (for positive) or 0 (for negative)	
+The sentences come from three different websites/fields: imdb.com, amazon
+.com, yelp.com. For each website, there exist 500 positive and 500 negative sentences. Those were selected randomly for larger datasets of reviews. 
+We attempted to select sentences that have a clearly positive or negative connotaton, the goal was for no neutral sentences to be selected. 
 
 Word Embeddings:
-* [GloVe: Algorithm for obtaining word vectors. Pretrained word vectors 
-available for download](http://nlp.stanford.edu/projects/glove/) [paper](http://nlp.stanford.edu/pubs/glove.pdf)
+* [GloVe](http://nlp.stanford.edu/projects/glove/) [paper](http://nlp.stanford.edu/pubs/glove.pdf) - Algorithm for obtaining word vectors. Pretrained word vectors 
+available for download
 
-* [Word2Vec by Mikolov](https://code.google.com/archive/p/word2vec/) [paper](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+* [Word2Vec by Mikolov](https://code.google.com/archive/p/word2vec/) [paper](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) - Google's original code and 
+pretrained word embeddings. 
 
 * [Word2Vec Python lib](https://github.com/RaRe-Technologies/gensim) - Google's
  word2vec reimplementation written in Python (cython). There are also doc2vec 
@@ -104,7 +139,8 @@ SemEval Challenges - International Workshop on Semantic Evaluation [web](http://
 
 * [SemEval2017](http://alt.qcri.org/semeval2017/index.php?id=tasks)
 
-* [SemEval2018](http://alt.qcri.org/semeval2018/) New challenge - 
+* [SemEval2018](http://alt.qcri.org/semeval2018/) New challenge for 2018 
+year, waiting for confirmation about tasks etc.
 
 <a name="tuts" />
 
@@ -123,7 +159,8 @@ introduction to Sentiment Analysis in Python @Sentiment Analysis Symposium 2015.
 
 ## Demos
 
-* [Sentiment TreeBank](http://nlp.stanford.edu:8080/sentiment/rntnDemo.html)
+* [Sentiment TreeBank](http://nlp.stanford.edu:8080/sentiment/rntnDemo.html) 
+- demo of Stanford's Treebank Sentiment Analysis
 
 * [NLTK Demo](http://text-processing.com/demo/sentiment/)
 
