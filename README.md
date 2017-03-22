@@ -154,9 +154,15 @@ year, waiting for confirmation about tasks etc.
 ## Tutorials
 
 * [SAS2015](https://github.com/laugustyniak/sas2015) iPython Notebook brief 
-introduction to Sentiment Analysis in Python @Sentiment Analysis Symposium 2015. Scikit-learn + BoW + SemEval Data.
+introduction to Sentiment Analysis in Python @ Sentiment Analysis Symposium 
+2015. Scikit-learn + BoW + SemEval Data.
 
-* [LingPipe Sentiment](http://alias-i.com/lingpipe/demos/tutorial/sentiment/read-me.html)
+* [LingPipe Sentiment](http://alias-i.com/lingpipe/demos/tutorial/sentiment/read-me.html) - This tutorial covers 
+assigning sentiment to movie reviews using language models. There are many 
+other approaches to sentiment. One we use fairly often is sentence based 
+sentiment with a logistic regression classifier. Contact us if you need more 
+information. For movie reviews we focus on two types of classification problem:
+Subjective (opinion) vs. Objective (fact) sentences Positive (favorable) vs. Negative (unfavorable) movie reviews
 
 <a name="papers" />
 
