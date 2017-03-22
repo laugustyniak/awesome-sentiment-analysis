@@ -80,6 +80,10 @@ a machine learning based toolkit for the processing of natural language text.
 ## Lexicons, Datasets, Word embeddings, and other resources
 
 Lexicons:
+* [Multidomain Sentiment Lexicons](https://github.com/laugustyniak/textlytics/tree/master/textlytics/data/lexicons) - lexicons
+ from 10 domains based on Amazon Product Dataset extracted using method 
+ described in [paper](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf).
+
 * [AFINN](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) - List of English words rated for valence
 
 * [SentiWordNet](http://sentiwordnet.isti.cnr.it/)
