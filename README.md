@@ -166,8 +166,7 @@ Analysis](http://www.mdpi.com/1099-4300/18/1/4) - Comparison of several
 lexicon, supervised learning and ensemble methods for sentiment analysis. 
 
 * [Simpler is better? Lexicon-based ensemble sentiment classification beats 
-supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) 
-- lexicon-based ensemble can beat supervised learning.
+supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) - lexicon-based ensemble can beat supervised learning.
 
 * [Sentiment Analysis: mining sentiments, opinions, and emotions](https://www.cs.uic.edu/~liub/FBS/sentiment-opinion-emotion-analysis.html) - This book is
  suitable for students, researchers, and practitioners interested in natural language processing in general, and sentiment analysis, opinion mining, emotion analysis, debate analysis, and intention mining in specific. Lecturers can use the book in class. 
