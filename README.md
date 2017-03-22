@@ -43,7 +43,7 @@ ground up in carefully memory-managed Cython. Independent research has
 confirmed that spaCy is the fastest in the world. If your application needs 
 to process entire web dumps, spaCy is the library you want to be using.
 
-* [Python, TextBlob](https://textblob.readthedocs.io/en/dev/advanced_usage.html#sentiment-analyzers)- TextBlob allows you to specify which algorithms
+* [Python, TextBlob](https://textblob.readthedocs.io/en/dev/advanced_usage.html#sentiment-analyzers) - TextBlob allows you to specify which algorithms
  you want to use under the hood of its simple API.
 
 * [Python, pattern](http://www.clips.ua.ac.be/pages/pattern-en#sentiment) - 
@@ -52,8 +52,8 @@ The pattern.en module contains a fast part-of-speech tagger for English
 analysis, tools for English verb conjugation and noun singularization & 
 pluralization, and a WordNet interface. 
 
-* [Java, CoreNLP by Stanford](http://stanfordnlp.github.io/CoreNLP/) - [Deeply 
-Moving: Deep Learning for Sentiment Analysis](http://nlp.stanford.edu/sentiment/).
+* [Java, CoreNLP by Stanford](http://stanfordnlp.github.io/CoreNLP/) - 
+NLP toolkit with [Deeply Moving: Deep Learning for Sentiment Analysis](http://nlp.stanford.edu/sentiment/).
 
 * [R, TM](http://cran.r-project.org/web/packages/tm/index) - R text mining 
 module including tm.plugin.sentiment.
