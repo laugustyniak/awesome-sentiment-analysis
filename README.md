@@ -66,7 +66,8 @@ module including tm.plugin.sentiment.
 
 * [C++, MITIE](https://github.com/mit-nlp/MITIE) - MIT Information Extraction
 
-* [Software, KNIME](https://www.knime.org/blog/sentiment-analysis)
+* [Software, KNIME](https://www.knime.org/blog/sentiment-analysis) - KNIME® 
+Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures. Our enterprise-grade, open source platform is fast to deploy, easy to scale and intuitive to learn. With more than 1000 modules, hundreds of ready-to-run examples, a comprehensive range of integrated tools, and the widest choice of advanced algorithms available, KNIME Analytics Platform is the perfect toolbox for any data scientist. Our steady course on unrestricted open source is your passport to a global community of data scientists, their expertise, and their active contributions.
 
 * [Software, RapidMiner](https://rapidminer.com/solutions/text-mining/) - 
 software capable of solving almost any text processing problem.
