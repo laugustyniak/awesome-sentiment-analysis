@@ -7,10 +7,6 @@ awesome-machine-learning.
 
 If you want to contribute to this list (please do), send me a pull request or
  contact me [@luk_augustyniak](https://twitter.com/luk_augustyniak)
-Also, a listed repository should be deprecated if:
-
-* Repository's owner explicitly say that "this library is not maintained".
-* Not committed for long time (2~3 years).
 
 ## Table of Contents
 
@@ -176,7 +172,10 @@ lexicon, supervised learning and ensemble methods for sentiment analysis.
 supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) - lexicon-based ensemble can beat supervised learning.
 
 * [Sentiment Analysis: mining sentiments, opinions, and emotions](https://www.cs.uic.edu/~liub/FBS/sentiment-opinion-emotion-analysis.html) - This book is
- suitable for students, researchers, and practitioners interested in natural language processing in general, and sentiment analysis, opinion mining, emotion analysis, debate analysis, and intention mining in specific. Lecturers can use the book in class. 
+ suitable for students, researchers, and practitioners interested in natural language processing in general, and sentiment analysis, opinion mining, emotion analysis, debate analysis, and intention mining in specific. Lecturers can use the book in class.
+  
+* [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) -  convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
+
 
 <a name="demos" />
 
