@@ -160,6 +160,10 @@ sentiment with a logistic regression classifier. Contact us if you need more
 information. For movie reviews we focus on two types of classification problem:
 Subjective (opinion) vs. Objective (fact) sentences Positive (favorable) vs. Negative (unfavorable) movie reviews
 
+* [Stanford's cs224d lectures on Deep Learning for Natural Language 
+Processing](https://cs224d.stanford.edu/lectures/) - course provided by 
+Richard Socher. 
+
 <a name="papers" />
 
 ## Papers, books
