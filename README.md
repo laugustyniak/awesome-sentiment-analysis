@@ -117,8 +117,15 @@ training, and 25,000 for testing.
   al,. KDD 2015](http://mdenil.com/media/papers/2015-deep-multi-instance-learning.pdf). It contains sentences labelled with positive or negative 
   sentiment. Score is either 1 (for positive) or 0 (for negative)	
 The sentences come from three different websites/fields: imdb.com, amazon
-.com, yelp.com. For each website, there exist 500 positive and 500 negative sentences. Those were selected randomly for larger datasets of reviews. 
-We attempted to select sentences that have a clearly positive or negative connotaton, the goal was for no neutral sentences to be selected. 
+.com, yelp.com. For each website, there exist 500 positive and 500 negative 
+sentences. Those were selected randomly for larger datasets of reviews.  
+We attempted to select sentences that have a clearly positive or negative 
+connotaton, the goal was for no neutral sentences to be selected.  
+
+* [sentic.net](http://sentic.net/) -  concept-level sentiment analysis, that 
+is, performing tasks such as polarity detection and emotion recognition by 
+leveraging on semantics and linguistics in stead of solely relying on word 
+co-occurrence frequencies.
 
 Word Embeddings:
 * [WordNet2Vec](https://arxiv.org/pdf/1606.03335.pdf) - Corpora Agnostic Word Vectorization Method based on WordNet.
@@ -180,6 +187,9 @@ supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) - l
   
 * [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) -  convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
 
+Multimodal sentiment analysis:
+* [Benchmarking Multimodal Sentiment Analysis](http://sentic.net/benchmarking-multimodal-sentiment-analysis.pdf) - multimodal sentiment 
+analysis and emotion detection (text, audio and video). 
 
 <a name="demos" />
 
