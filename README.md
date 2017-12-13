@@ -56,7 +56,7 @@ module including tm.plugin.sentiment.
 
 * [Software, GATE](https://gate.ac.uk/sentiment/) - GATE is open source 
 
-* [Java, LingPipe](http://alias-i.com/lingpipe/) - LingPipe is tool kit for 
+* [Java, LingPipe](http://alias-i.com/lingpipe/) - LingPipe is tool kit for processing text using computational linguistics.
 
 * [Python, NLTK](http://www.nltk.org) - Natural Language Toolkit.
 
