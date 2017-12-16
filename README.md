@@ -54,6 +54,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 ## Lexicons, Datasets, Word embeddings, and other resources
 
 Lexicons:
+
 * [Multidomain Sentiment Lexicons](https://github.com/laugustyniak/textlytics/tree/master/textlytics/data/lexicons) - lexicons from 10 domains based on Amazon Product Dataset extracted using method described in [paper](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) and used in [paper](http://www.mdpi.com/1099-4300/18/1/4).
 
 * [AFINN](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) - AFINN is a list of English words rated for valence with an integer between minus five (negative) and plus five (positive). The words have been manually labeled by Finn Årup Nielsen in 2009-2011.
@@ -61,6 +62,7 @@ Lexicons:
 * [SentiWordNet](http://sentiwordnet.isti.cnr.it/) [paper](https://www.researchgate.net/publication/220746537_SentiWordNet_30_An_Enhanced_Lexical_Resource_for_Sentiment_Analysis_and_Opinion_Mining) - Lexical resource based on WordNet
 
 Datasets:
+
 * [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/code.html) [paper](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf) - Sentiment dataset with fine-grained sentiment annotations. The Rotten Tomatoes movie review dataset is a corpus of movie reviews used for sentiment analysis, originally collected by [Pang and Lee](https://arxiv.org/abs/cs/0506075). In their work on sentiment treebanks, Socher et al. used Amazon's Mechanical Turk to create fine-grained labels for all parsed phrases in the corpus. This competition presents a chance to benchmark your sentiment-analysis ideas on the Rotten Tomatoes dataset. You are asked to label phrases on a scale of five values: negative, somewhat negative, neutral, somewhat positive, positive. Obstacles like sentence negation, sarcasm, terseness, language ambiguity, and many others make this task very challenging.
 
 * [Amazon product dataset](http://jmcauley.ucsd.edu/data/amazon/) - This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014. This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs).
@@ -72,6 +74,7 @@ Datasets:
 * [sentic.net](http://sentic.net/) -  concept-level sentiment analysis, that is, performing tasks such as polarity detection and emotion recognition by leveraging on semantics and linguistics in stead of solely relying on word co-occurrence frequencies.
 
 Word Embeddings:
+
 * [WordNet2Vec](https://arxiv.org/pdf/1606.03335.pdf) - Corpora Agnostic Word Vectorization Method based on WordNet.
 
 * [GloVe](http://nlp.stanford.edu/projects/glove/) [paper](http://nlp.stanford.edu/pubs/glove.pdf) - Algorithm for obtaining word vectors. Pretrained word vectors available for download.
@@ -80,7 +83,12 @@ Word Embeddings:
 
 * [Word2Vec Python lib](https://github.com/RaRe-Technologies/gensim) - Google's word2vec reimplementation written in Python (cython). There are also doc2vec and topic modelling method.
 
-SemEval Challenges - International Workshop on Semantic Evaluation [web](http://aclweb.org/aclwiki/index.php?title=SemEval_3):
+* [WN-Affect emotion lexicon](http://wndomains.fbk.eu/wnaffect.html) - WordNet-Affect is an extension of WordNet Domains, including a subset of synsets suitable to represent affective concepts correlated with affective words. Similarly to our method for domain labels, we assigned to a number of WordNet synsets one or more affective labels (a-labels). In particular, the affective concepts representing emotional state are individuated by synsets marked with the a-label emotion. There are also other a-labels for those concepts representing moods, situations eliciting emotions, or emotional responses.
+
+* [EmoLex NRC Word-Emotion Association Lexicon](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) - the NRC Emotion Lexicon is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The annotations were manually done by crowdsourcing.
+
+SemEval Challenges International Workshop on Semantic Evaluation [web](http://aclweb.org/aclwiki/index.php?title=SemEval_3):
+
 * [SemEval2014](http://alt.qcri.org/semeval2014/index.php?id=tasks)
 
 * [SemEval2015](http://alt.qcri.org/semeval2015/index.php?id=tasks)
@@ -91,10 +99,6 @@ SemEval Challenges - International Workshop on Semantic Evaluation [web](http://
 
 * [SemEval2018](http://alt.qcri.org/semeval2018/) New challenge for 2018 
 year, waiting for confirmation about tasks etc.
-
-* [WN-Affect emotion lexicon](http://wndomains.fbk.eu/wnaffect.html) - WordNet-Affect is an extension of WordNet Domains, including a subset of synsets suitable to represent affective concepts correlated with affective words. Similarly to our method for domain labels, we assigned to a number of WordNet synsets one or more affective labels (a-labels). In particular, the affective concepts representing emotional state are individuated by synsets marked with the a-label emotion. There are also other a-labels for those concepts representing moods, situations eliciting emotions, or emotional responses.
-
-* [EmoLex NRC Word-Emotion Association Lexicon](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) - the NRC Emotion Lexicon is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The annotations were manually done by crowdsourcing.
 
 <a name="tuts" />
 
@@ -119,6 +123,7 @@ year, waiting for confirmation about tasks etc.
 * [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) -  convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
 
 Multimodal sentiment analysis:
+
 * [Benchmarking Multimodal Sentiment Analysis](http://sentic.net/benchmarking-multimodal-sentiment-analysis.pdf) - multimodal sentiment analysis and emotion detection (text, audio and video).
 
 <a name="demos" />
@@ -148,3 +153,9 @@ Multimodal sentiment analysis:
 * [MeaningCloud](https://www.meaningcloud.com/products/sentiment-analysis)
 
 * [texsie](http://texsie.stride.ai)
+
+* [Google Cloud API](https://cloud.google.com/natural-language/docs/sentiment-tutorial)
+
+* [Amazon Comprehend](https://aws.amazon.com/comprehend/)
+
+* [Microsoft Azure Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/)
