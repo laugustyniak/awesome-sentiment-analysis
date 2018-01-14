@@ -70,7 +70,31 @@ software capable of solving almost any text processing problem.
 processing text using computational linguistics.
 
 * [JAVA, OpenNLP](https://opennlp.apache.org/) - The Apache OpenNLP library is 
-a machine learning based toolkit for the processing of natural language text. 
+a machine learning based toolkit for the processing of natural language text.
+
+* [Dragon Sentiment Classifier C#](https://github.com/amrish7/Dragon) - Dragon Sentiment API is a C# implementation of the Naive Bayes Sentiment Classifier to analyze the sentiment of a text corpus.
+
+* [sentiment: Tools for Sentiment Analysis in R](https://github.com/timjurka/sentiment) - sentiment is an R package with tools for sentiment analysis including bayesian classifiers for positivity/negativity and emotion classification.
+
+* [ASUM Java](http://uilab.kaist.ac.kr/research/WSDM11/) - Aspect and Sentiment Unification Model for Online Review Analysis.
+
+* [AFINN-based sentiment analysis for Node.js](https://github.com/thisandagain/sentiment) - Sentiment is a Node.js module that uses the AFINN-165 wordlist and Emoji Sentiment Ranking to perform sentiment analysis on arbitrary blocks of input text.
+
+* [SentiMental - Putting the Mental in Sentimental in js](https://github.com/thinkroth/Sentimental) - Sentiment analysis tool for node.js based on the AFINN-111 wordlist. Version 1.0 introduces performance improvements making it both the first, and now fastest, AFINN backed Sentiment Analysis tool for node.
+
+### Aspect-based Sentiment Analysis
+
+* [Twitter-sent-dnn](https://github.com/xiaohan2012/twitter-sent-dnn) - Deep Neural Network for Sentiment Analysis on Twitter.
+
+* [Aspect Based Sentiment Analysis](https://github.com/pedrobalage/SemevalAspectBasedSentimentAnalysis) - System that participated in Semeval 2014 task 4: Aspect Based Sentiment Analysis.
+
+* [Aspect Based Sentiment Analysis using End-to-End Memory Networks](https://github.com/ganeshjawahar/mem_absa) - TensorFlow implementation of [Tang et al.'s EMNLP 2016 work](https://arxiv.org/abs/1605.08900).
+
+* [Generating Reviews and Discovering Sentiment](https://github.com/openai/generating-reviews-discovering-sentiment) - Code for [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444) (Alec Radford, Rafal Jozefowicz, Ilya Sutskever).
+
+* [Sentiment Analysis with Social Attention](https://github.com/yiyang-gt/social-attention) - Code for the TACL paper [Overcoming Language Variation in Sentiment Analysis with Social Attention](https://arxiv.org/abs/1511.06052)
+
+* [Neural Sentiment Classification](https://github.com/thunlp/NSC) - Neural Sentiment Classification aims to classify the sentiment in a document with neural models, which has been the state-of-the-art methods for sentiment classification. In this project, we provide our implementations of NSC, NSC+LA and NSC+UPA [Chen et al., 2016] in which user and product information is considered via attentions over different semantic levels.
 
 <a name="data"/>
 
@@ -156,6 +180,8 @@ year, waiting for confirmation about tasks etc.
 
 * [EmoLex NRC Word-Emotion Association Lexicon](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) - the NRC Emotion Lexicon is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The annotations were manually done by crowdsourcing.
 
+* [Multidimensional Stance Lexicon](https://github.com/umashanthi-research/multidimensional-stance-lexicon) - A Multidimensional Lexicon for Interpersonal Stancetaking. Pavalanathan, Fitzpatrick, Kiesling, and Eisenstein. ACL 2017.
+
 <a name="tuts" />
 
 ## Tutorials
@@ -224,3 +250,9 @@ example](http://sentiment.vivekn.com/)
 * [MeaningCloud](https://www.meaningcloud.com/products/sentiment-analysis)
 
 * [texsie](http://texsie.stride.ai)
+
+* [Aylien](https://developer.aylien.com/text-api-demo)
+
+* [Amazon Comprehend](https://aws.amazon.com/comprehend/features/)
+
+* [MS Cognitive Services](https://azure.microsoft.com/en-gb/services/cognitive-services/text-analytics/)
