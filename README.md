@@ -93,7 +93,23 @@ Lexicons:
 
 * [MPQA (Multi-Perspective Question Answering) Subjectivity Lexicon](http://mpqa.cs.pitt.edu/lexicons/) - The MPQA (Multi-Perspective Question Answering) Subjectivity Lexicon is a list of subjectivity clues that is part of [OpinionFinder](http://mpqa.cs.pitt.edu/opinionfinder/opinionfinder_2/) and also helps to determine text polarity.
 
-* [Sentiment140](https://github.com/felipebravom/StaticTwitterSent/tree/master/extra/Sentiment140-Lexicon-v0.1) - The Sentiment140 Lexicon is a list of words and their associations with positive and negative sentiment. The lexicon is provides sentiment score for unigrams, bigrams and unigram-bigram pairs.
+* [NRC-Canada Lexcicons](http://saifmohammad.com/WebPages/lexicons.html) - the web page lists various word association lexicons that capture word-sentiment, word-emotion, and word-colour associations. 
+
+* [Sentiment140](http://saifmohammad.com/Lexicons/Sentiment140-Lexicon-v0.1.zip) - One of the NRC-Canada team lexicon - the Sentiment140 Lexicon is a list of words and their associations with positive and negative sentiment. The lexicon is provides sentiment score for unigrams, bigrams and unigram-bigram pairs.
+
+* [MSOL](http://saifmohammad.com/Lexicons/MSOL-June15-09.txt.zip) - Macquarie Semantic Orientation Lexicon.
+
+* [SemEval-2015 English Twitter Sentiment Lexicon](http://saifmohammad.com/WebDocs/lexiconstoreleaseonsclpage/SemEval2015-English-Twitter-Lexicon.zip) - The lexicon was used as an official test set in the [SemEval-2015 shared Task #10: Subtask E](http://alt.qcri.org/semeval2015/task10/). The phrases in this lexicon include at least one of these [negators](http://saifmohammad.com/WebDocs/lexiconstoreleaseonsclpage/SemEval2015-English-negators.txt). 
+
+* [SemEval-2016 Arabic Twitter Sentiment Lexicon](http://saifmohammad.com/WebDocs/lexiconstoreleaseonsclpage/SemEval2016-Arabic-Twitter-Lexicon.zip) - The lexicon was used as an official test set in the [SemEval-2016 shared Task #7: Detecting Sentiment Intensity of English and Arabic Phrases](http://alt.qcri.org/semeval2016/task7/). The phrases in this lexicon include at least one of these [negators](http://saifmohammad.com/WebDocs/list-Arabic-negators.txt).    
+
+* [SemEval-2016 English Twitter Mixed Polarity Lexicon](http://saifmohammad.com/WebDocs/lexiconstoreleaseonsclpage/SCL-OPP.zip) - This SCL, referred to as the Sentiment Composition Lexicon of Opposing Polarity Phrases (SCL-OPP), includes phrases that have at least one positive and at least one negative word—for example, phrases such as happy accident, best winter break, couldn’t stop smiling, and lazy sundays. We refer to such phrases as opposing polarity phrases. SCL-OPP has 265 trigrams, 311 bigrams, and 602 unigrams annotated with real-valued sentiment association scores through Best-Worst scaling (aka MaxDiff).
+
+* [SemEval-2016 General English Sentiment Modifiers Lexicon](http://saifmohammad.com/WebDocs/lexiconstoreleaseonsclpage/SCL-NMA.zip) - Sentiment Composition Lexicon of Negators, Modals, and Adverbs (SCL-NMA). Negators, modals, and degree adverbs can significantly affect the sentiment of the words they modify. We manually annotate a set of phrases that include negators (such as no and cannot), modals (such as would have been and could), degree adverbs (such as quite and less), and their combinations. Both the phrases and their constituent content words are annotated with real-valued scores of sentiment intensity using the technique Best–Worst Scaling (aka MaxDiff), which provides reliable annotations. We refer to the resulting lexicon as Sentiment Composition Lexicon of Negators, Modals, and Adverbs (SCL-NMA). The lexicon was used as an official test set in the [SemEval-2016 shared Task #7: Detecting Sentiment Intensity of English and Arabic Phrases](http://alt.qcri.org/semeval2016/task7/). The objective of that task was to automatically predict sentiment intensity scores for multi-word phrases.
+
+* [The NRC Valence, Arousal, and Dominance Lexcion](http://saifmohammad.com/WebDocs/VAD/NRC-VAD-Lexicon-Aug2018Release.zip) - The NRC Valence, Arousal, and Dominance (VAD) Lexicon includes a list of more than 20,000 English words and their valence, arousal, and dominance scores. For a given word and a dimension (V/A/D), the scores range from 0 (lowest V/A/D) to 1 (highest V/A/D). The lexicon with its fine-grained real-valued scores was created by manual annotation using Best--Worst Scaling. 
+
+
 
 Datasets:
 
