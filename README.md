@@ -85,6 +85,16 @@ Lexicons:
 
 * [SentiWordNet](http://sentiwordnet.isti.cnr.it/) [paper](https://www.researchgate.net/publication/220746537_SentiWordNet_30_An_Enhanced_Lexical_Resource_for_Sentiment_Analysis_and_Opinion_Mining) - Lexical resource based on WordNet
 
+* [SentiWords](https://hlt-nlp.fbk.eu/technologies/sentiwords) - Collection of 155,000 English words with a sentiment score included between -1 and 1. Words are in the form lemma#PoS and are aligned with WordNet lists that include adjectives, nouns, verbs and adverbs.
+
+* [SenticNet](https://sentic.net/) [API](http://sentic.net/api/) - Words with a sentiment score included between -1 and 1.
+
+* [WordStat](https://provalisresearch.com/products/content-analysis-software/wordstat-dictionary/sentiment-dictionaries/) - Context-specific sentiment analysis dictionary with categories Negative, Positive, Uncertainty, Litigiousness and Modal. This dataset is inspired from two papers, written by Loughran and McDonald (2011) and Young and Soroka (2011).
+
+* [MPQA (Multi-Perspective Question Answering) Subjectivity Lexicon](http://mpqa.cs.pitt.edu/lexicons/) - The MPQA (Multi-Perspective Question Answering) Subjectivity Lexicon is a list of subjectivity clues that is part of [OpinionFinder](http://mpqa.cs.pitt.edu/opinionfinder/opinionfinder_2/) and also helps to determine text polarity.
+
+* [Sentiment140](https://github.com/felipebravom/StaticTwitterSent/tree/master/extra/Sentiment140-Lexicon-v0.1) - The Sentiment140 Lexicon is a list of words and their associations with positive and negative sentiment. The lexicon is provides sentiment score for unigrams, bigrams and unigram-bigram pairs.
+
 Datasets:
 
 
