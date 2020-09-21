@@ -109,14 +109,11 @@ Lexicons:
 
 * [The NRC Valence, Arousal, and Dominance Lexcion](http://saifmohammad.com/WebDocs/VAD/NRC-VAD-Lexicon-Aug2018Release.zip) - The NRC Valence, Arousal, and Dominance (VAD) Lexicon includes a list of more than 20,000 English words and their valence, arousal, and dominance scores. For a given word and a dimension (V/A/D), the scores range from 0 (lowest V/A/D) to 1 (highest V/A/D). The lexicon with its fine-grained real-valued scores was created by manual annotation using Best--Worst Scaling. 
 
-
-
 Datasets:
-
 
 * [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/code.html) [paper](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf) - Sentiment dataset with fine-grained sentiment annotations. The Rotten Tomatoes movie review dataset is a corpus of movie reviews used for sentiment analysis, originally collected by [Pang and Lee](https://arxiv.org/abs/cs/0506075). In their work on sentiment treebanks, Socher et al. used Amazon's Mechanical Turk to create fine-grained labels for all parsed phrases in the corpus. This competition presents a chance to benchmark your sentiment-analysis ideas on the Rotten Tomatoes dataset. You are asked to label phrases on a scale of five values: negative, somewhat negative, neutral, somewhat positive, positive. Obstacles like sentence negation, sarcasm, terseness, language ambiguity, and many others make this task very challenging.
 
-* [Amazon product dataset](http://jmcauley.ucsd.edu/data/amazon/) - This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014. This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs).
+* [Amazon product dataset](http://jmcauley.ucsd.edu/data/amazon/) - This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014. This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). The updated version of dataset - update as for 2018 is availalbe here [https://nijianmo.github.io/amazon/index.html](https://nijianmo.github.io/amazon/index.html). 
  
 * [IMDB movies reviews dataset](http://ai.stanford.edu/~amaas/data/sentiment/) - This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. Authors provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing.
 
@@ -148,8 +145,7 @@ SemEval Challenges International Workshop on Semantic Evaluation [web](http://ac
 
 * [SemEval2017](http://alt.qcri.org/semeval2017/index.php?id=tasks)
 
-* [SemEval2018](http://alt.qcri.org/semeval2018/) New challenge for 2018 
-year, waiting for confirmation about tasks etc.
+* [SemEval2018](http://alt.qcri.org/semeval2018/) New challenge for 2018 year, waiting for confirmation about tasks etc.
 
 * [WN-Affect emotion lexicon](http://wndomains.fbk.eu/wnaffect.html) - WordNet-Affect is an extension of WordNet Domains, including a subset of synsets suitable to represent affective concepts correlated with affective words. Similarly to our method for domain labels, we assigned to a number of WordNet synsets one or more affective labels (a-labels). In particular, the affective concepts representing emotional state are individuated by synsets marked with the a-label emotion. There are also other a-labels for those concepts representing moods, situations eliciting emotions, or emotional responses.
 
