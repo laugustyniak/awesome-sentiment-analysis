@@ -14,9 +14,14 @@ If you want to contribute to this list (please do), send me a pull request or co
     - [Lexicons](#lexicons)
     - [Datasets](#datasets)
     - [Word Embeddings](#word-embeddings)
+    - [Language Models](#language-models)
 - [International Workshops](#international-workshops)
+- [Papers](#papers)
+    - [Language Models](#language-models)
+    - [Neural Network based Models](#neural-network-based-models)
+    - [Lexicon-based Ensembles](#lexicon-based-ensembles)
 - [Tutorials](#tutorials)
-- [Papers](#papers-books)
+- [Books](#books)
 - [Demos](#demos)
 - [API](#api)
 - [Related Studies](#related-studies)
@@ -103,7 +108,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [MPQA (Multi-Perspective Question Answering) Subjectivity Lexicon](http://mpqa.cs.pitt.edu/lexicons/) - The MPQA (Multi-Perspective Question Answering) Subjectivity Lexicon is a list of subjectivity clues that is part of [OpinionFinder](http://mpqa.cs.pitt.edu/opinionfinder/opinionfinder_2/) and also helps to determine text polarity.
 
-* [NRC-Canada Lexcicons](http://saifmohammad.com/WebPages/lexicons.html) - the web page lists various word association lexicons that capture word-sentiment, word-emotion, and word-colour associations. 
+* [NRC-Canada Lexicons](http://saifmohammad.com/WebPages/lexicons.html) - the web page lists various word association lexicons that capture word-sentiment, word-emotion, and word-colour associations. 
 
 * [Sentiment140](http://saifmohammad.com/Lexicons/Sentiment140-Lexicon-v0.1.zip) - One of the NRC-Canada team lexicon - the Sentiment140 Lexicon is a list of words and their associations with positive and negative sentiment. The lexicon is provides sentiment score for unigrams, bigrams and unigram-bigram pairs.
 
@@ -117,7 +122,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [SemEval-2016 General English Sentiment Modifiers Lexicon](http://saifmohammad.com/WebDocs/lexiconstoreleaseonsclpage/SCL-NMA.zip) - Sentiment Composition Lexicon of Negators, Modals, and Adverbs (SCL-NMA). Negators, modals, and degree adverbs can significantly affect the sentiment of the words they modify. We manually annotate a set of phrases that include negators (such as no and cannot), modals (such as would have been and could), degree adverbs (such as quite and less), and their combinations. Both the phrases and their constituent content words are annotated with real-valued scores of sentiment intensity using the technique Best–Worst Scaling (aka MaxDiff), which provides reliable annotations. We refer to the resulting lexicon as Sentiment Composition Lexicon of Negators, Modals, and Adverbs (SCL-NMA). The lexicon was used as an official test set in the [SemEval-2016 shared Task #7: Detecting Sentiment Intensity of English and Arabic Phrases](http://alt.qcri.org/semeval2016/task7/). The objective of that task was to automatically predict sentiment intensity scores for multi-word phrases.
 
-* [The NRC Valence, Arousal, and Dominance Lexcion](http://saifmohammad.com/WebDocs/VAD/NRC-VAD-Lexicon-Aug2018Release.zip) - The NRC Valence, Arousal, and Dominance (VAD) Lexicon includes a list of more than 20,000 English words and their valence, arousal, and dominance scores. For a given word and a dimension (V/A/D), the scores range from 0 (lowest V/A/D) to 1 (highest V/A/D). The lexicon with its fine-grained real-valued scores was created by manual annotation using Best--Worst Scaling. 
+* [The NRC Valence, Arousal, and Dominance Lexicon](http://saifmohammad.com/WebDocs/VAD/NRC-VAD-Lexicon-Aug2018Release.zip) - The NRC Valence, Arousal, and Dominance (VAD) Lexicon includes a list of more than 20,000 English words and their valence, arousal, and dominance scores. For a given word and a dimension (V/A/D), the scores range from 0 (lowest V/A/D) to 1 (highest V/A/D). The lexicon with its fine-grained real-valued scores was created by manual annotation using Best--Worst Scaling. 
 
 * [EmoLex NRC Word-Emotion Association Lexicon](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) - the NRC Emotion Lexicon is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The annotations were manually done by crowdsourcing.
 
@@ -161,6 +166,8 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 [Back to Top](#table-of-contents)
 
+### Pretrained Language Models
+
 ### International Workshops
 
 * SemEval Challenges International Workshop on Semantic Evaluation 
@@ -174,6 +181,20 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 [Back to Top](#table-of-contents)
 
+## Papers
+
+### Language Models
+
+### Neural Network based Models
+
+* [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) -  convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
+
+### Lexicon-based Ensembles 
+
+* [Comprehensive Study on Lexicon-based Ensemble Classification Sentiment Analysis](http://www.mdpi.com/1099-4300/18/1/4) - Comparison of several lexicon, supervised learning and ensemble methods for sentiment analysis.
+
+* [Simpler is better? Lexicon-based ensemble sentiment classification beats supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) - lexicon-based ensemble can beat supervised learning.
+
 ## Tutorials
 
 * [SAS2015](https://github.com/laugustyniak/sas2015) iPython Notebook brief introduction to Sentiment Analysis in Python @ Sentiment Analysis Symposium 2015. Scikit-learn + BoW + SemEval Data.
@@ -184,15 +205,9 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 [Back to Top](#table-of-contents)
 
-## Papers, books
-
-* [Comprehensive Study on Lexicon-based Ensemble Classification Sentiment Analysis](http://www.mdpi.com/1099-4300/18/1/4) - Comparison of several lexicon, supervised learning and ensemble methods for sentiment analysis.
-
-* [Simpler is better? Lexicon-based ensemble sentiment classification beats supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) - lexicon-based ensemble can beat supervised learning.
+## Books
 
 * [Sentiment Analysis: mining sentiments, opinions, and emotions](https://www.cs.uic.edu/~liub/FBS/sentiment-opinion-emotion-analysis.html) - This book is suitable for students, researchers, and practitioners interested in natural language processing in general, and sentiment analysis, opinion mining, emotion analysis, debate analysis, and intention mining in specific. Lecturers can use the book in class.
-  
-* [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) -  convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
 
 [Back to Top](#table-of-contents)
 
