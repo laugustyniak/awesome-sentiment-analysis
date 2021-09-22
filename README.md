@@ -168,6 +168,16 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 ### Pretrained Language Models
 
+* BERT (Encoder of the transormer) 
+    * [Tensorflow-based ](https://github.com/google-research/bert) Implementation: 
+        * BERT<sub>base</sub>,
+        BERT<sub>large</sub>
+        BERT<sub>multilingual</sub>, etc.
+    * [Torch-based  (Higging Face)](https://huggingface.co/models) model implementations:
+        * XLNet, XmlRoBERTa, etc.
+* GPT (Decoder of the transformer)
+    * [GPT-2](https://huggingface.co/gpt2)
+
 ### International Workshops
 
 * SemEval Challenges International Workshop on Semantic Evaluation 
@@ -185,6 +195,18 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 ### Language Models
 
+* [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) -- 
+is a generalized autoregressive pretraining method that (1) enables
+learning bidirectional contexts by maximizing the expected likelihood over all
+permutations of the factorization order and (2) overcomes the limitations of BERT
+thanks to its autoregressive formulation
+
+* [How to Fine-Tune BERT for Text Classification?](https://arxiv.org/pdf/1905.05583.pdf) --
+authors conduct exhaustive experiments to investigate different fine-tuning methods of 
+[BERT](https://arxiv.org/pdf/1810.04805.pdf) 
+(Bidirectional Encoder Representations from Transformers) on text
+classification task and provide a general solution for BERT fine-tuning
+
 ### Neural Network based Models
 
 * [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) -  convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
@@ -195,7 +217,11 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [Simpler is better? Lexicon-based ensemble sentiment classification beats supervised methods](https://www.cs.rpi.edu/~szymansk/papers/C3-ASONAM14.pdf) - lexicon-based ensemble can beat supervised learning.
 
+[Back to Top](#table-of-contents)
+
 ## Tutorials
+
+* [GPT2 For Text Classification using Hugging Face Transformers](https://gmihaila.github.io/tutorial_notebooks/gpt2_finetune_classification/) - GPT model application for sentiment analysis task
 
 * [SAS2015](https://github.com/laugustyniak/sas2015) iPython Notebook brief introduction to Sentiment Analysis in Python @ Sentiment Analysis Symposium 2015. Scikit-learn + BoW + SemEval Data.
 
