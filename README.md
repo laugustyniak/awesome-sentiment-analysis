@@ -195,6 +195,11 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 ### Language Models
 
+* [Sentiment Analysis in the Era of Large Language Models: A Reality Check](https://arxiv.org/pdf/2305.15005.pdf) --
+authors evaluate performance across 13 tasks on 26 datasets and compare the large language models (LLMs) such as ChatGPT 
+with the results against small language models (SLMs) trained on domain-specific datasets, 
+and highlight the limitations of current evaluation practices in assessing LLMs’ SA abilities.
+
 * [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) -- 
 is a generalized autoregressive pretraining method that (1) enables
 learning bidirectional contexts by maximizing the expected likelihood over all
