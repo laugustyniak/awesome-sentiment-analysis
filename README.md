@@ -2,6 +2,14 @@
 
 A curated list of awesome sentiment analysis frameworks, libraries, software (by language), and of course academic papers and methods. In addition NLP lib useful in sentiment analysis. Inspired by awesome-machine-learning.
 
+**Latest Update (January 2026)**: Comprehensive update covering 2021-2026 advances including:
+- Large Language Models (GPT-4, Claude, Llama, Gemini, Mixtral)
+- Modern Transformers (RoBERTa, DistilBERT, ALBERT, XLM-RoBERTa)
+- Multimodal Sentiment Analysis (vision-language models, multimodal LLMs)
+- Multilingual and Cross-lingual Methods
+- Recent Benchmarks and Datasets (2023-2026)
+- Domain-Specific Applications (Financial, Healthcare, Social Media)
+
 If you want to contribute to this list (please do), send me a pull request or contact me [@luk_augustyniak](https://twitter.com/luk_augustyniak)
 
 ## Table of Contents
@@ -9,15 +17,42 @@ If you want to contribute to this list (please do), send me a pull request or co
 <!-- MarkdownTOC depth=4 -->
 
 - [Libraries](#libraries)
+    - [Modern Transformer-based Libraries (2023-2026)](#modern-transformer-based-libraries-2023-2026)
+    - [Traditional Libraries](#traditional-libraries)
     - [Aspect-Based Sentiment Analysis](#aspect-based-sentiment-analysis)
 - [Resources](#resources)
     - [Lexicons](#lexicons)
     - [Datasets](#datasets)
+        - [Classic Benchmarks](#classic-benchmarks)
+        - [Recent Datasets (2023-2026)](#recent-datasets-2023-2026)
+        - [Domain-Specific Datasets](#domain-specific-datasets)
     - [Word Embeddings](#word-embeddings)
-    - [Language Models](#language-models)
+    - [Pretrained Language Models](#pretrained-language-models)
+        - [Large Language Models (2023-2026)](#large-language-models-2023-2026)
+        - [Encoder-based Transformers (BERT Family)](#encoder-based-transformers-bert-family)
+        - [Multilingual Transformers](#multilingual-transformers)
+        - [Domain-Specific Models](#domain-specific-models)
+        - [Decoder-based Models](#decoder-based-models)
+        - [Hybrid Architectures (2023-2025)](#hybrid-architectures-2023-2025)
+- [Multimodal Sentiment Analysis](#multimodal-sentiment-analysis)
+    - [Overview](#overview)
+    - [Recent Models and Frameworks (2024-2025)](#recent-models-and-frameworks-2024-2025)
+    - [Multimodal LLMs for Sentiment Analysis](#multimodal-llms-for-sentiment-analysis)
+    - [Key Research Findings (2024-2025)](#key-research-findings-2024-2025)
+    - [Applications](#applications)
+- [Multilingual and Cross-lingual Sentiment Analysis](#multilingual-and-cross-lingual-sentiment-analysis)
+    - [State-of-the-Art Models (2024-2025)](#state-of-the-art-models-2024-2025)
+    - [Recent Approaches and Techniques](#recent-approaches-and-techniques)
+    - [Performance Benchmarks](#performance-benchmarks)
+    - [Supported Languages](#supported-languages)
 - [International Workshops](#international-workshops)
 - [Papers](#papers)
     - [Language Models](#language-models)
+    - [Transformer Models and RoBERTa (2023-2025)](#transformer-models-and-roberta-2023-2025)
+    - [Multimodal Sentiment Analysis (2024-2025)](#multimodal-sentiment-analysis-2024-2025)
+    - [Multilingual and Cross-lingual Sentiment Analysis (2024-2025)](#multilingual-and-cross-lingual-sentiment-analysis-2024-2025)
+    - [Aspect-Based Sentiment Analysis (2024-2025)](#aspect-based-sentiment-analysis-2024-2025)
+    - [Domain-Specific Applications (2024-2025)](#domain-specific-applications-2024-2025)
     - [Neural Network based Models](#neural-network-based-models)
     - [Lexicon-based Ensembles](#lexicon-based-ensembles)
 - [Tutorials](#tutorials)
@@ -29,6 +64,22 @@ If you want to contribute to this list (please do), send me a pull request or co
 <!-- /MarkdownTOC -->
 
 ## Libraries
+
+### Modern Transformer-based Libraries (2023-2026)
+
+* [Python, Hugging Face Transformers](https://huggingface.co/transformers) - State-of-the-art Natural Language Processing library with 215+ sentiment analysis models. Supports BERT, RoBERTa, DistilBERT, ALBERT, XLNet, and all modern transformer architectures. Simple 5-line integration for sentiment analysis with pre-trained models.
+
+* [Python, cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) - RoBERTa model fine-tuned for Twitter sentiment analysis, achieving state-of-the-art performance on social media text (updated 2024).
+
+* [Python, ModernFinBERT](https://huggingface.co/ModernFinBERT) - Financial sentiment analysis model based on ModernBERT architecture (released January 2025), specialized for financial texts, earnings calls, and analyst reports.
+
+* [Python, tabularisai/multilingual-sentiment-analysis](https://huggingface.co/tabularisai/multilingual-sentiment-analysis) - Multilingual sentiment model supporting multiple languages simultaneously (released December 2024).
+
+* [Python, Flair](https://github.com/flairNLP/flair) - Modern NLP framework with multilingual support and state-of-the-art sentiment analysis models, particularly strong for cross-lingual tasks.
+
+* [Python, Stanza](https://stanfordnlp.github.io/stanza/) - Stanford NLP library with multilingual support for 60+ languages, includes sentiment analysis capabilities.
+
+### Traditional Libraries
 
 * [Python, Textlytics](https://github.com/laugustyniak/textlytics) - set of sentiment analysis examples based on Amazon Data, SemEval, IMDB etc.
 
@@ -138,17 +189,48 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 ### Datasets
 
-* [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/code.html) 
+#### Classic Benchmarks
+
+* [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/code.html)
     [[paper]](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf) - Sentiment dataset with fine-grained sentiment annotations. The Rotten Tomatoes movie review dataset is a corpus of movie reviews used for sentiment analysis, originally collected by [Pang and Lee](https://arxiv.org/abs/cs/0506075). In their work on sentiment treebanks, Socher et al. used Amazon's Mechanical Turk to create fine-grained labels for all parsed phrases in the corpus. This competition presents a chance to benchmark your sentiment-analysis ideas on the Rotten Tomatoes dataset. You are asked to label phrases on a scale of five values: negative, somewhat negative, neutral, somewhat positive, positive. Obstacles like sentence negation, sarcasm, terseness, language ambiguity, and many others make this task very challenging.
 
-* [Amazon Product Dataset](http://jmcauley.ucsd.edu/data/amazon/) - This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014. This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). The updated version of dataset - update as for 2018 is availalbe here [https://nijianmo.github.io/amazon/index.html](https://nijianmo.github.io/amazon/index.html). 
- 
+* [Amazon Product Dataset](http://jmcauley.ucsd.edu/data/amazon/) - This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014. This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). The updated version of dataset - update as for 2018 is availalbe here [https://nijianmo.github.io/amazon/index.html](https://nijianmo.github.io/amazon/index.html).
+
 * [IMDB Movies Reviews Dataset](http://ai.stanford.edu/~amaas/data/sentiment/) - This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. Authors provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing.
 
-* [Sentiment Labelled Sentences Dataset](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences) The dataset contains sentences labelled with positive or negative sentiment. This dataset was created for the following 
+* [Sentiment Labelled Sentences Dataset](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences) The dataset contains sentences labelled with positive or negative sentiment. This dataset was created for the following
 [paper](http://mdenil.com/media/papers/2015-deep-multi-instance-learning.pdf). It contains sentences labelled with positive or negative sentiment. Score is either 1 (for positive) or 0 (for negative) The sentences come from three different websites/fields: imdb.com, amazon .com, yelp.com. For each website, there exist 500 positive and 500 negative sentences. Those were selected randomly for larger datasets of reviews. We attempted to select sentences that have a clearly positive or negative connotaton, the goal was for no neutral sentences to be selected.
 
 * [sentic.net](http://sentic.net/) -  concept-level sentiment analysis, that is, performing tasks such as polarity detection and emotion recognition by leveraging on semantics and linguistics in stead of solely relying on word co-occurrence frequencies.
+
+#### Recent Datasets (2023-2026)
+
+* [TweetEval](https://huggingface.co/datasets/tweet_eval) - Part of ACL initiative for semantic evaluation. Widely used benchmark for Twitter sentiment analysis and text classification tasks (2020-2025).
+
+* [TweetFinSent](https://github.com/TweetFinSent) - Financial sentiment dataset from Twitter. State-of-the-art models achieve 69.54% accuracy and 65.72% macro F1-score with adversarial training (2023-2024).
+
+* [IMDB Deep Context Reviews](https://www.kaggle.com/datasets) - Extended version capturing movie reviews with richer contextual information from IMDB's vast user base (2024-2025).
+
+* [Large-scale English Comment Dataset](https://huggingface.co/datasets) - Collection of 241,000+ English-language comments from various online platforms (updated 2025).
+
+* [MLDoc Dataset](https://github.com/facebookresearch/MLDoc) - Multilingual document classification corpus used for cross-lingual sentiment analysis. State-of-the-art adversarial training achieves 88.48% average accuracy (2024).
+
+* [PAWS-X](https://github.com/google-research-datasets/paws) - Paraphrase Adversaries from Word Scrambling, cross-lingual dataset achieving 86.63% accuracy with recent methods (2024).
+
+* [Kurdish Medical Corpus](https://github.com/Kurdish-BLARK) - Specialized medical sentiment dataset achieving 92% accuracy with multilingual BERT (2024).
+
+#### Domain-Specific Datasets
+
+* **Financial Sentiment**
+    * [Financial PhraseBank](https://www.researchgate.net/publication/251231364_FinancialPhraseBank-v10) - Sentences from financial news categorized by sentiment
+    * TweetFinSent - Twitter financial sentiment with 69.54% SOTA accuracy (2023)
+
+* **Healthcare/Mental Health**
+    * Mental Health sentiment datasets for student wellbeing analysis (2024-2025)
+    * Clinical sentiment corpora for patient feedback analysis
+
+* **Restaurant Reviews**
+    * Multilingual restaurant review datasets achieving 91.9% accuracy with XLM-RSA (2024)
 
 [Back to Top](#table-of-contents)
 
@@ -168,15 +250,186 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 ### Pretrained Language Models
 
-* BERT (Encoder of the transormer) 
-    * [Tensorflow-based ](https://github.com/google-research/bert) Implementation: 
-        * BERT<sub>base</sub>,
-        BERT<sub>large</sub>
-        BERT<sub>multilingual</sub>, etc.
-    * [Torch-based  (Higging Face)](https://huggingface.co/models) model implementations:
-        * XLNet, XmlRoBERTa, etc.
-* GPT (Decoder of the transformer)
-    * [GPT-2](https://huggingface.co/gpt2)
+#### Large Language Models (2023-2026)
+
+* **GPT Family (OpenAI)**
+    * [GPT-4](https://openai.com/gpt-4) - Advanced large language model with strong sentiment analysis capabilities, particularly for complex emotional nuances and context-dependent sentiment (2023-2024)
+    * [GPT-4o](https://openai.com/index/hello-gpt-4o/) - Multimodal version with enhanced performance (2024)
+    * [GPT-3.5 Turbo](https://platform.openai.com/docs/models) - Cost-effective alternative for sentiment analysis tasks
+
+* **Claude Family (Anthropic)**
+    * [Claude 4.5](https://www.anthropic.com/claude) - Achieved 75% average accuracy across sentiment analysis tasks, with 82% accuracy in emotion detection (2025 benchmark)
+    * Claude 3.5 Sonnet - High-performance model for nuanced sentiment understanding
+
+* **Llama Family (Meta)**
+    * [Llama 3.1](https://github.com/meta-llama/llama-models) - Open-source LLM with strong sentiment analysis performance in multilingual contexts (2024)
+    * [Llama 2](https://llama.meta.com/) - Widely used for fine-tuning on domain-specific sentiment tasks (2023)
+
+* **Gemini (Google)**
+    * [Gemini Pro](https://ai.google.dev/gemini-api) - Multimodal LLM with sentiment analysis capabilities across text and images (2024-2025)
+
+* **Mixtral (Mistral AI)**
+    * [Mixtral 8x7B](https://mistral.ai/news/mixtral-of-experts/) - Mixture-of-experts model showing competitive performance in sentiment classification (2024)
+
+* **Grok (xAI)**
+    * [Grok 4](https://grok.x.ai/) - Specialized in monitoring online sentiment and identifying emerging trends on social media (2024-2025)
+
+#### Encoder-based Transformers (BERT Family)
+
+* **BERT (Bidirectional Encoder Representations from Transformers)**
+    * [BERT-base, BERT-large](https://github.com/google-research/bert) - Original TensorFlow implementation (Google, 2018)
+    * [BERT Multilingual](https://huggingface.co/bert-base-multilingual-cased) - Supports 104 languages
+    * Typical performance: 87.8% accuracy on sentiment tasks
+
+* **RoBERTa (Robustly Optimized BERT)**
+    * [RoBERTa-base, RoBERTa-large](https://huggingface.co/roberta-base) - Improved BERT training achieving 88.5-96.30% accuracy (Facebook AI, 2019)
+    * [twitter-roberta-base-sentiment](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) - Fine-tuned for social media (69.54% on TweetFinSent)
+    * Consistently outperforms BERT on sentiment benchmarks with F1-scores up to 98.11%
+
+* **DistilBERT**
+    * [DistilBERT](https://huggingface.co/distilbert-base-uncased) - 40% smaller, 60% faster than BERT while retaining 97% of performance (Hugging Face, 2019)
+
+* **ALBERT (A Lite BERT)**
+    * [ALBERT](https://huggingface.co/albert-base-v2) - Parameter-efficient version of BERT with reduced memory consumption (Google, 2019)
+
+* **XLNet**
+    * [XLNet](https://huggingface.co/xlnet-base-cased) - Generalized autoregressive pretraining outperforming BERT on several benchmarks (Google/CMU, 2019)
+
+#### Multilingual Transformers
+
+* **XLM-RoBERTa**
+    * [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base) - Trained on 100 languages, achieves 91.9% accuracy on multilingual sentiment tasks (Facebook AI, 2020)
+    * Outperforms other cross-lingual approaches by 3%+ in zero-shot settings
+
+* **mBERT (Multilingual BERT)**
+    * [mBERT](https://huggingface.co/bert-base-multilingual-cased) - Supports cross-lingual sentiment analysis with 92% accuracy on specialized corpora
+
+#### Domain-Specific Models
+
+* **Financial Sentiment**
+    * [FinBERT](https://huggingface.co/ProsusAI/finbert) - BERT fine-tuned on financial texts (ProsusAI)
+    * [ModernFinBERT](https://huggingface.co/ModernFinBERT) - Latest financial sentiment model (2025)
+    * [BloombergGPT](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/) - 50B parameter LLM for financial NLP including sentiment analysis
+
+* **Healthcare/Mental Health**
+    * [RoBERTa-Mental-Health](https://huggingface.co/mental-health) - Specialized models for analyzing student mental health and clinical sentiment
+
+#### Decoder-based Models
+
+* **GPT Family**
+    * [GPT-2](https://huggingface.co/gpt2) - Decoder-based transformer (OpenAI, 2019)
+    * [GPT-Neo, GPT-J](https://huggingface.co/EleutherAI) - Open-source GPT alternatives (EleutherAI, 2021)
+
+#### Hybrid Architectures (2023-2025)
+
+* **BERT-LSTM Hybrid** - Combining BERT contextual embeddings with BiLSTM for improved sequence dependencies
+* **RoBERTa-GRU** - Hybrid models combining transformers with recurrent networks achieving 96.77% accuracy
+* **BERT-Attention** - Multi-layered attention mechanisms with BERT for comprehensive sentiment dissection
+
+[Back to Top](#table-of-contents)
+
+## Multimodal Sentiment Analysis
+
+Multimodal sentiment analysis combines text, images, video, and audio to understand sentiment more comprehensively than text-only approaches.
+
+### Overview
+
+* Multimodal Aspect-based Sentiment Analysis (MABSA) has become a core NLP task as user-generated content increasingly includes multiple modalities (text, images, video) (2024-2025)
+* Vision-language models demonstrate remarkable potential by integrating visual and textual information to enhance sentiment classification accuracy
+* Critical challenges include capturing key information across modalities, achieving cross-modal alignment, and narrowing the semantic gap between image and text
+
+### Recent Models and Frameworks (2024-2025)
+
+* **Sentiment Analysis Engine (SAE)** - End-to-end multimodal model addressing challenges in capturing emotional changes across modalities
+    [[paper]](https://dl.acm.org/doi/10.1145/3708359.3712106)
+
+* **RoBERTa-AOBERT Multi-modal Model** - Combines RoBERTa with aspect-oriented BERT for image-text sentiment analysis
+    [[paper]](https://dl.acm.org/doi/10.1145/3745533.3745597)
+
+* **Multimodal GRU with Directed Pairwise Cross-Modal Attention** - Advanced architecture for cross-modal sentiment understanding
+    [[paper]](https://www.nature.com/articles/s41598-025-93023-3)
+
+* **FDR-MSA (Feature Disentanglement and Reconstruction)** - Novel approach to multimodal sentiment analysis through feature separation and reconstruction
+    [[paper]](https://www.sciencedirect.com/science/article/pii/S0950705124005999)
+
+* **Image-Text Sentiment Analysis with Multi-Channel Multi-Modal Joint Learning** - Advanced fusion techniques for analyzing sentiment across image-text pairs
+    [[paper]](https://www.tandfonline.com/doi/full/10.1080/08839514.2024.2371712)
+
+### Multimodal LLMs for Sentiment Analysis
+
+* **LLaVA (Large Language and Vision Assistant)** - Demonstrates strong capabilities in multimodal aspect-based sentiment analysis
+* **GPT-4V (Vision)** - Multimodal GPT-4 variant for analyzing sentiment in images and text
+* **Gemini Pro** - Google's multimodal LLM with sentiment analysis across modalities
+
+### Key Research Findings (2024-2025)
+
+* Survey: "Large language models meet text-centric multimodal sentiment analysis" - comprehensive review of LLM applications to multimodal SA
+    [[paper]](https://link.springer.com/article/10.1007/s11432-024-4593-8)
+* Uncertainty exists about LLM adaptability to multimodal aspect-based sentiment analysis (MABSA), though recent advances show promise
+* Multimodal models with multi-layer feature fusion and multi-task learning achieve state-of-the-art results
+    [[paper]](https://www.nature.com/articles/s41598-025-85859-6)
+
+### Applications
+
+* Social media sentiment analysis (Twitter, Instagram, TikTok)
+* Video content sentiment detection
+* Customer feedback analysis with images and text
+* Product review analysis combining text and product images
+
+[Back to Top](#table-of-contents)
+
+## Multilingual and Cross-lingual Sentiment Analysis
+
+Analysis of sentiment across multiple languages and transfer of sentiment models between languages.
+
+### State-of-the-Art Models (2024-2025)
+
+* **XLM-RoBERTa (XLM-R)** - Large multilingual Transformer consistently outperforms other cross-lingual approaches in zero-shot classification by 3%+
+    [[Hugging Face]](https://huggingface.co/xlm-roberta-base)
+    * Trained on 100 languages
+    * Achieves 91.9% accuracy on multilingual sentiment tasks
+
+* **XLM-RSA** - Novel multilingual model based on XLM-RoBERTa with Aspect-Focused Attention
+    * 91.9% accuracy on restaurant reviews (2024)
+    * Surpasses BERT (87.8%) and RoBERTa (88.5%)
+
+* **Multilingual BERT (mBERT)** - Supports 104 languages
+    * 92% accuracy on specialized corpora (e.g., Kurdish Medical Corpus)
+    * Effective for cross-lingual embedding with MUSE, BiCVM, BiSkip
+
+### Recent Approaches and Techniques
+
+* **Ensemble Methods** - Combining transformers and LLMs for cross-lingual sentiment by translating to base language (English)
+    [[paper]](https://www.nature.com/articles/s41598-024-60210-7)
+
+* **Prompt-based Fine-tuning** - Language-independent sentiment analysis using prompt engineering with multilingual transformers
+    [[paper]](https://www.nature.com/articles/s41598-025-03559-7)
+
+* **Adaptive Self-alignment** - Bridging resource gaps with data augmentation and transfer learning
+    [[paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC12192753/)
+
+* **Zero-shot and Few-shot Learning** - Small Multilingual Language Models (SMLMs) show superior zero-shot performance vs LLMs; LLMs demonstrate enhanced adaptive potential in few-shot settings (2024)
+
+### Performance Benchmarks
+
+* **MLDoc Dataset**: 88.48% average accuracy with adversarial training (2024)
+* **PAWS-X Dataset**: 86.63% accuracy for cross-lingual paraphrase detection (2024)
+* **Restaurant Reviews**: 91.9% with XLM-RSA across multiple languages (2024)
+
+### Supported Languages
+
+Recent models support extensive language coverage including:
+* Major languages: English, Chinese, Spanish, Arabic, French, German, Italian, Portuguese, Russian, Japanese
+* Specialized models: Hindi, Korean, Turkish, Kurdish, Polish, and 90+ additional languages
+
+### Applications
+
+* Social media monitoring across global markets
+* Customer sentiment analysis for international brands
+* Multilingual chatbot sentiment understanding
+* Cross-border e-commerce review analysis
+
+[Back to Top](#table-of-contents)
 
 ### International Workshops
 
@@ -211,6 +464,66 @@ authors conduct exhaustive experiments to investigate different fine-tuning meth
 [BERT](https://arxiv.org/pdf/1810.04805.pdf) 
 (Bidirectional Encoder Representations from Transformers) on text
 classification task and provide a general solution for BERT fine-tuning
+
+### Transformer Models and RoBERTa (2023-2025)
+
+* [Improving sentiment classification using a RoBERTa-based hybrid model](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2023.1292010/full) - Hybrid RoBERTa-GRU model achieving superior performance on sentiment classification (2023)
+
+* [Advancing Sentiment Analysis: Evaluating RoBERTa against Traditional and Deep Learning Models](https://etasr.com/index.php/ETASR/article/view/9703) - Comprehensive comparison showing RoBERTa achieving 96.30% accuracy and F1-scores of 98.11% (2024)
+
+* [Exploring transformer models for sentiment classification: A comparison of BERT, RoBERTa, ALBERT, DistilBERT, and XLNet](https://onlinelibrary.wiley.com/doi/10.1111/exsy.13701) - Comparative study of transformer models with RoBERTa consistently outperforming others (2024)
+
+* [A BERT–LSTM–Attention Framework for Robust Multi-Class Sentiment Analysis on Twitter Data](https://www.mdpi.com/2079-8954/13/11/964) - Hybrid architecture combining BERT with BiLSTM and attention mechanisms for Twitter sentiment (2024)
+
+* [Emotion-Aware RoBERTa enhanced with emotion-specific attention and TF-IDF gating for fine-grained emotion recognition](https://www.nature.com/articles/s41598-025-99515-6) - Enhanced RoBERTa achieving 96.77% accuracy and weighted F1-score of 0.97 (2025)
+
+* [Generalizing sentiment analysis: a review of progress, challenges, and emerging directions](https://link.springer.com/article/10.1007/s13278-025-01461-8) - Comprehensive review covering advances from traditional ML to Transformers and hybrid architectures (2025)
+
+### Multimodal Sentiment Analysis (2024-2025)
+
+* [Large language models meet text-centric multimodal sentiment analysis: a survey](https://link.springer.com/article/10.1007/s11432-024-4593-8) - Comprehensive survey on applying LLMs to multimodal sentiment analysis (2024)
+
+* [Whether Current Large Language Models is Suitable for Multimodal Aspect-based Sentiment Analysis?](https://dl.acm.org/doi/10.1145/3712623.3712644) - Investigation of LLM adaptability to MABSA tasks including Llama2, LLaVA, and ChatGPT (2024)
+
+* [Multimodal sentiment analysis based on multi-layer feature fusion and multi-task learning](https://www.nature.com/articles/s41598-025-85859-6) - Novel approach using multi-layer feature fusion for multimodal SA (2025)
+
+* [FDR-MSA: Enhancing multimodal sentiment analysis through feature disentanglement and reconstruction](https://www.sciencedirect.com/science/article/pii/S0950705124005999) - Advanced feature processing for multimodal sentiment (2024)
+
+* [SAE: A Multimodal Sentiment Analysis Large Language Model](https://dl.acm.org/doi/10.1145/3708359.3712106) - End-to-end LLM for multimodal sentiment analysis (2025)
+
+### Multilingual and Cross-lingual Sentiment Analysis (2024-2025)
+
+* [A multimodal approach to cross-lingual sentiment analysis with ensemble of transformer and LLM](https://www.nature.com/articles/s41598-024-60210-7) - Ensemble method combining transformers and LLMs for cross-lingual sentiment (2024)
+
+* [Prompt-based fine-tuning with multilingual transformers for language-independent sentiment analysis](https://www.nature.com/articles/s41598-025-03559-7) - Novel prompt-based approach for multilingual sentiment (2025)
+
+* [Bridging resource gaps in cross-lingual sentiment analysis: adaptive self-alignment with data augmentation and transfer learning](https://pmc.ncbi.nlm.nih.gov/articles/PMC12192753/) - Addressing resource constraints in cross-lingual SA (2024)
+
+* [Multilingual sentiment analysis in restaurant reviews using aspect focused learning](https://www.nature.com/articles/s41598-025-12464-y) - XLM-RSA achieving 91.9% accuracy on multilingual restaurant reviews (2025)
+
+* [The Model Arena for Cross-lingual Sentiment Analysis: A Comparative Study in the Era of Large Language Models](https://aclanthology.org/2024.wassa-1.12/) - Comparative study of LLMs vs SMLMs in cross-lingual settings (2024)
+
+### Aspect-Based Sentiment Analysis (2024-2025)
+
+* [A systematic review of aspect-based sentiment analysis: domains, methods, and trends](https://link.springer.com/article/10.1007/s10462-024-10906-z) - Comprehensive systematic review of ABSA methods and trends (2024)
+
+* [Large-Scale Aspect-Based Sentiment Analysis with Reasoning-Infused LLMs](https://arxiv.org/html/2601.03940) - Incorporating reasoning techniques into LLMs for ABSA (2025)
+
+* [Aspect-based Sentiment Analysis via Synthetic Image Generation](https://aclanthology.org/2025.findings-emnlp.1190/) - Novel approach generating sentimental images for ABSA (EMNLP 2025)
+
+* [Unifying aspect-based sentiment analysis BERT and multi-layered graph convolutional networks for comprehensive sentiment dissection](https://www.nature.com/articles/s41598-024-61886-7) - Multi-layered Enhanced Graph Convolutional Networks (MLEGCN) for ABSA (2024)
+
+* [Triple dimensional psychology knowledge encouraging graph attention networks to exploit aspect-based sentiment analysis](https://www.nature.com/articles/s41598-025-08914-2) - Psychology-informed graph attention networks (VADGAT) for ABSA (2025)
+
+* [Local interpretation of deep learning models for Aspect-Based Sentiment Analysis](https://www.sciencedirect.com/science/article/pii/S0952197624021067) - Addressing interpretability in deep learning ABSA models (2025)
+
+### Domain-Specific Applications (2024-2025)
+
+* [An overview of model uncertainty and variability in LLM-based sentiment analysis: challenges, mitigation strategies, and the role of explainability](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1609097/full) - LLM challenges in specialized domains (finance, healthcare, legal) (2025)
+
+* [Analyzing student mental health with RoBERTa-Large: a sentiment analysis and data analytics approach](https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2025.1615788/full) - Healthcare application for mental health monitoring (2025)
+
+* [Comparative analysis of transformer models for sentiment classification of UK CBDC discourse on X](https://link.springer.com/article/10.1007/s44257-025-00035-4) - Financial sentiment analysis on social media (2025)
 
 ### Neural Network based Models
 
