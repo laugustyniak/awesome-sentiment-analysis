@@ -71,7 +71,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [Python, cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) - RoBERTa model fine-tuned for Twitter sentiment analysis, achieving state-of-the-art performance on social media text (updated 2024).
 
-* [Python, ModernFinBERT](https://huggingface.co/ModernFinBERT) - Financial sentiment analysis model based on ModernBERT architecture (released January 2025), specialized for financial texts, earnings calls, and analyst reports.
+* [Python, ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Financial sentiment analysis model based on ModernBERT architecture (released July 2025), specialized for financial texts, earnings calls, and analyst reports. Improves accuracy by up to 48% over existing FinBERT models.
 
 * [Python, tabularisai/multilingual-sentiment-analysis](https://huggingface.co/tabularisai/multilingual-sentiment-analysis) - Multilingual sentiment model supporting multiple languages simultaneously (released December 2024).
 
@@ -224,7 +224,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [PAWS-X](https://github.com/google-research-datasets/paws) - Paraphrase Adversaries from Word Scrambling, cross-lingual dataset achieving 86.63% accuracy with recent methods (2024).
 
-* [Kurdish Medical Corpus](https://github.com/Kurdish-BLARK) - Specialized medical sentiment dataset achieving 92% accuracy with multilingual BERT (2024).
+* [Kurdish Medical Corpus](https://aro.koyauniversity.org/index.php/aro/article/view/1088) - Specialized medical sentiment dataset for Kurdish text classification achieving 92% accuracy and 92% F1-score with multilingual BERT [[paper]](https://doi.org/10.14500/aro.11088) (Badawi, 2023).
 
 #### Domain-Specific Datasets
 
@@ -279,7 +279,7 @@ If you want to contribute to this list (please do), send me a pull request or co
     * [Mixtral 8x7B](https://mistral.ai/news/mixtral-of-experts/) - Mixture-of-experts model showing competitive performance in sentiment classification (2024)
 
 * **Grok (xAI)**
-    * [Grok 4](https://grok.x.ai/) - Specialized in monitoring online sentiment and identifying emerging trends on social media (2024-2025)
+    * [Grok 4](https://x.ai/grok) - Specialized in monitoring online sentiment and identifying emerging trends on social media with real-time X/Twitter integration. Excels at tracking public opinion, brand perception, and viral content (released July 2025)
 
 #### Encoder-based Transformers (BERT Family)
 
@@ -315,11 +315,11 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * **Financial Sentiment**
     * [FinBERT](https://huggingface.co/ProsusAI/finbert) - BERT fine-tuned on financial texts (ProsusAI)
-    * [ModernFinBERT](https://huggingface.co/ModernFinBERT) - Latest financial sentiment model (2025)
+    * [ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Latest financial sentiment model based on ModernBERT architecture, up to 48% accuracy improvement (July 2025)
     * [BloombergGPT](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/) - 50B parameter LLM for financial NLP including sentiment analysis
 
 * **Healthcare/Mental Health**
-    * [RoBERTa-Mental-Health](https://huggingface.co/mental-health) - Specialized models for analyzing student mental health and clinical sentiment
+    * [MentalRoBERTa](https://huggingface.co/mental/mental-roberta-base) - RoBERTa-base model trained on mental health-related posts from Reddit, specialized for classifying depression, anxiety, PTSD, stress, suicidal ideation, and neutral content
 
 #### Decoder-based Models
 
