@@ -205,6 +205,11 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 #### Recent Datasets (2023-2026)
 
+* [**Brand24/MMS - Massively Multilingual Sentiment Corpus**](https://huggingface.co/datasets/Brand24/mms)
+    [[paper]](https://arxiv.org/abs/2306.07902)
+    [[github]](https://github.com/Brand24-AI/mms_benchmark)
+    [[benchmark]](https://huggingface.co/spaces/Brand24/mms_benchmark) - **The most extensive open massively multilingual corpus** for training sentiment models (2023). Contains 79 manually selected high-quality datasets from over 350 sources covering **27 languages** across 6 language families with **6,164,762 training samples**. Features rich linguistic metadata including morphological, syntactic, and functional properties, plus data quality confidence scores. Languages include: Arabic, Bulgarian, Chinese, Czech, Dutch, English, Spanish, French, Japanese, Polish, Portuguese, Russian, and 15 others. Class distribution: Positive (56.7%), Neutral (21.8%), Negative (21.6%). License: CC BY-NC 4.0.
+
 * [TweetEval](https://huggingface.co/datasets/tweet_eval) - Part of ACL initiative for semantic evaluation. Widely used benchmark for Twitter sentiment analysis and text classification tasks (2020-2025).
 
 * [TweetFinSent](https://github.com/TweetFinSent) - Financial sentiment dataset from Twitter. State-of-the-art models achieve 69.54% accuracy and 65.72% macro F1-score with adversarial training (2023-2024).
@@ -412,6 +417,10 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
 
 ### Performance Benchmarks
 
+* **Brand24/MMS Benchmark**: The most extensive multilingual benchmark with 79 datasets, 27 languages, 6.16M samples
+    [[dataset]](https://huggingface.co/datasets/Brand24/mms)
+    [[interactive benchmark]](https://huggingface.co/spaces/Brand24/mms_benchmark)
+    [[paper]](https://arxiv.org/abs/2306.07902)
 * **MLDoc Dataset**: 88.48% average accuracy with adversarial training (2024)
 * **PAWS-X Dataset**: 86.63% accuracy for cross-lingual paraphrase detection (2024)
 * **Restaurant Reviews**: 91.9% with XLM-RSA across multiple languages (2024)
@@ -419,6 +428,7 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
 ### Supported Languages
 
 Recent models support extensive language coverage including:
+* **Brand24/MMS covers 27 languages**: Arabic, Bulgarian, Chinese, Czech, Dutch, English, Spanish, French, Japanese, Polish, Portuguese, Russian, and 15 others across 6 language families
 * Major languages: English, Chinese, Spanish, Arabic, French, German, Italian, Portuguese, Russian, Japanese
 * Specialized models: Hindi, Korean, Turkish, Kurdish, Polish, and 90+ additional languages
 
@@ -492,6 +502,8 @@ classification task and provide a general solution for BERT fine-tuning
 * [SAE: A Multimodal Sentiment Analysis Large Language Model](https://dl.acm.org/doi/10.1145/3708359.3712106) - End-to-end LLM for multimodal sentiment analysis (2025)
 
 ### Multilingual and Cross-lingual Sentiment Analysis (2024-2025)
+
+* [**Massively Multilingual Corpus of Sentiment Datasets and Multi-faceted Sentiment Classification Benchmark**](https://arxiv.org/abs/2306.07902) - Łukasz Augustyniak, Szymon Woźniak, Marcin Gruza, Piotr Gramacki, Krzysztof Rajda, Mikołaj Morzy, Tomasz Kajdanowicz (2023). **The most extensive open massively multilingual corpus** with 79 high-quality datasets covering 27 languages (6 language families) and 6.16M training samples. Addresses challenges in multilingual sentiment analysis with rich linguistic metadata including morphological, syntactic, and functional properties. Available on [HuggingFace](https://huggingface.co/datasets/Brand24/mms) with interactive [benchmark](https://huggingface.co/spaces/Brand24/mms_benchmark). [GitHub](https://github.com/Brand24-AI/mms_benchmark)
 
 * [A multimodal approach to cross-lingual sentiment analysis with ensemble of transformer and LLM](https://www.nature.com/articles/s41598-024-60210-7) - Ensemble method combining transformers and LLMs for cross-lingual sentiment (2024)
 
