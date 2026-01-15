@@ -206,9 +206,11 @@ If you want to contribute to this list (please do), send me a pull request or co
 #### Recent Datasets (2023-2026)
 
 * [**Brand24/MMS - Massively Multilingual Sentiment Corpus**](https://huggingface.co/datasets/Brand24/mms)
-    [[paper]](https://arxiv.org/abs/2306.07902)
+    [[arXiv]](https://arxiv.org/abs/2306.07902)
+    [[NeurIPS 2023]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/7945ab41f2aada1247a7c95e75cdf6c8-Abstract-Datasets_and_Benchmarks.html)
+    [[pdf]](https://proceedings.neurips.cc/paper_files/paper/2023/file/7945ab41f2aada1247a7c95e75cdf6c8-Paper-Datasets_and_Benchmarks.pdf)
     [[github]](https://github.com/Brand24-AI/mms_benchmark)
-    [[benchmark]](https://huggingface.co/spaces/Brand24/mms_benchmark) - **The most extensive open massively multilingual corpus** for training sentiment models (2023). Contains 79 manually selected high-quality datasets from over 350 sources covering **27 languages** across 6 language families with **6,164,762 training samples**. Features rich linguistic metadata including morphological, syntactic, and functional properties, plus data quality confidence scores. Languages include: Arabic, Bulgarian, Chinese, Czech, Dutch, English, Spanish, French, Japanese, Polish, Portuguese, Russian, and 15 others. Class distribution: Positive (56.7%), Neutral (21.8%), Negative (21.6%). License: CC BY-NC 4.0.
+    [[benchmark]](https://huggingface.co/spaces/Brand24/mms_benchmark) - **The most extensive open massively multilingual corpus** for training sentiment models. Accepted to **NeurIPS 2023 Datasets and Benchmarks Track**. Contains 79 manually selected high-quality datasets from over 350 sources covering **27 languages** across 6 language families with **6,164,762 training samples**. Features rich linguistic metadata including morphological, syntactic, and functional properties, plus data quality confidence scores. Presents multi-faceted sentiment classification benchmark with hundreds of experiments on different base models, training objectives, and fine-tuning strategies. Languages include: Arabic, Bulgarian, Chinese, Czech, Dutch, English, Spanish, French, Japanese, Polish, Portuguese, Russian, and 15 others. Class distribution: Positive (56.7%), Neutral (21.8%), Negative (21.6%). License: CC BY-NC 4.0.
 
 * [TweetEval](https://huggingface.co/datasets/tweet_eval) - Part of ACL initiative for semantic evaluation. Widely used benchmark for Twitter sentiment analysis and text classification tasks (2020-2025).
 
@@ -417,10 +419,11 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
 
 ### Performance Benchmarks
 
-* **Brand24/MMS Benchmark**: The most extensive multilingual benchmark with 79 datasets, 27 languages, 6.16M samples
+* **Brand24/MMS Benchmark**: The most extensive multilingual benchmark with 79 datasets, 27 languages, 6.16M samples (NeurIPS 2023)
     [[dataset]](https://huggingface.co/datasets/Brand24/mms)
     [[interactive benchmark]](https://huggingface.co/spaces/Brand24/mms_benchmark)
-    [[paper]](https://arxiv.org/abs/2306.07902)
+    [[arXiv]](https://arxiv.org/abs/2306.07902)
+    [[NeurIPS]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/7945ab41f2aada1247a7c95e75cdf6c8-Abstract-Datasets_and_Benchmarks.html)
 * **MLDoc Dataset**: 88.48% average accuracy with adversarial training (2024)
 * **PAWS-X Dataset**: 86.63% accuracy for cross-lingual paraphrase detection (2024)
 * **Restaurant Reviews**: 91.9% with XLM-RSA across multiple languages (2024)
@@ -503,7 +506,7 @@ classification task and provide a general solution for BERT fine-tuning
 
 ### Multilingual and Cross-lingual Sentiment Analysis (2024-2025)
 
-* [**Massively Multilingual Corpus of Sentiment Datasets and Multi-faceted Sentiment Classification Benchmark**](https://arxiv.org/abs/2306.07902) - Łukasz Augustyniak, Szymon Woźniak, Marcin Gruza, Piotr Gramacki, Krzysztof Rajda, Mikołaj Morzy, Tomasz Kajdanowicz (2023). **The most extensive open massively multilingual corpus** with 79 high-quality datasets covering 27 languages (6 language families) and 6.16M training samples. Addresses challenges in multilingual sentiment analysis with rich linguistic metadata including morphological, syntactic, and functional properties. Available on [HuggingFace](https://huggingface.co/datasets/Brand24/mms) with interactive [benchmark](https://huggingface.co/spaces/Brand24/mms_benchmark). [GitHub](https://github.com/Brand24-AI/mms_benchmark)
+* [**Massively Multilingual Corpus of Sentiment Datasets and Multi-faceted Sentiment Classification Benchmark**](https://arxiv.org/abs/2306.07902) - Łukasz Augustyniak, Szymon Woźniak, Marcin Gruza, Piotr Gramacki, Krzysztof Rajda, Mikołaj Morzy, Tomasz Kajdanowicz. **NeurIPS 2023 Datasets and Benchmarks Track**. [[NeurIPS proceedings]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/7945ab41f2aada1247a7c95e75cdf6c8-Abstract-Datasets_and_Benchmarks.html) [[PDF]](https://proceedings.neurips.cc/paper_files/paper/2023/file/7945ab41f2aada1247a7c95e75cdf6c8-Paper-Datasets_and_Benchmarks.pdf) - **The most extensive open massively multilingual corpus** with 79 high-quality datasets covering 27 languages (6 language families) and 6.16M training samples. Presents multi-faceted sentiment classification benchmark summarizing hundreds of experiments on different base models, training objectives, dataset collections, and fine-tuning strategies. Addresses challenges in multilingual sentiment analysis with rich linguistic metadata including morphological, syntactic, and functional properties. Available on [HuggingFace](https://huggingface.co/datasets/Brand24/mms) with interactive [benchmark](https://huggingface.co/spaces/Brand24/mms_benchmark). [GitHub](https://github.com/Brand24-AI/mms_benchmark)
 
 * [A multimodal approach to cross-lingual sentiment analysis with ensemble of transformer and LLM](https://www.nature.com/articles/s41598-024-60210-7) - Ensemble method combining transformers and LLMs for cross-lingual sentiment (2024)
 
