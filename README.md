@@ -2,11 +2,15 @@
 
 A curated list of awesome sentiment analysis frameworks, libraries, software (by language), and of course academic papers and methods. In addition NLP lib useful in sentiment analysis. Inspired by awesome-machine-learning.
 
-**Latest Update (January 2026)**: Comprehensive update covering 2021-2026 advances including:
-- Large Language Models (GPT-4, Claude, Llama, Gemini, Mixtral)
-- Modern Transformers (RoBERTa, DistilBERT, ALBERT, XLM-RoBERTa)
+**Latest Update (April 2026)**: Comprehensive update covering 2021-2026 advances including:
+- Large Language Models (GPT-4, Claude, Llama, Gemini, Mixtral, DeepSeek)
+- Modern Transformers (RoBERTa, DistilBERT, ALBERT, XLM-RoBERTa, ModernBERT)
 - Multimodal Sentiment Analysis (vision-language models, multimodal LLMs)
-- Multilingual and Cross-lingual Methods
+- Multilingual and Cross-lingual Methods (Brand24/MMS — NeurIPS 2023, SemEval-2026)
+- **NEW: LLM Techniques** — Prompt Engineering, CoT, RAG, LoRA/QLoRA, RLHF, DPO
+- **NEW: LLM Evaluation & Benchmarks** — SentiEval, stability metrics, model leaderboard
+- **NEW: Explainable Sentiment Analysis** — SHAP, LIME, ModernBERT-XAI, attention viz
+- **NEW: LLM Reliability & Safety** — Hallucination, bias, uncertainty quantification
 - Recent Benchmarks and Datasets (2023-2026)
 - Domain-Specific Applications (Financial, Healthcare, Social Media)
 
@@ -45,9 +49,32 @@ If you want to contribute to this list (please do), send me a pull request or co
     - [Recent Approaches and Techniques](#recent-approaches-and-techniques)
     - [Performance Benchmarks](#performance-benchmarks)
     - [Supported Languages](#supported-languages)
+- [LLM Techniques for Sentiment Analysis](#llm-techniques-for-sentiment-analysis)
+    - [Prompt Engineering](#prompt-engineering)
+    - [In-Context Learning & Few-Shot Methods](#in-context-learning--few-shot-methods)
+    - [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
+    - [Parameter-Efficient Fine-Tuning (PEFT)](#parameter-efficient-fine-tuning-peft)
+    - [Instruction Tuning & Alignment](#instruction-tuning--alignment)
+- [LLM Evaluation & Benchmarks for Sentiment Analysis](#llm-evaluation--benchmarks-for-sentiment-analysis)
+    - [Benchmark Frameworks](#benchmark-frameworks)
+    - [Evaluation Metrics](#evaluation-metrics)
+    - [Model Performance Leaderboard (2025-2026)](#model-performance-leaderboard-2025-2026)
+- [Explainable Sentiment Analysis](#explainable-sentiment-analysis)
+    - [Methods & Tools](#methods--tools)
+    - [Survey Papers](#survey-papers)
+- [LLM Reliability & Safety in Sentiment Analysis](#llm-reliability--safety-in-sentiment-analysis)
+    - [Hallucination](#hallucination)
+    - [Bias & Fairness](#bias--fairness)
+    - [Uncertainty & Variability](#uncertainty--variability)
+    - [Domain Instability](#domain-instability)
 - [International Workshops](#international-workshops)
 - [Papers](#papers)
     - [Language Models](#language-models)
+    - [Prompt Engineering & LLM Methods (2025-2026)](#prompt-engineering--llm-methods-2025-2026)
+    - [Parameter-Efficient Fine-Tuning (2025-2026)](#parameter-efficient-fine-tuning-2025-2026)
+    - [Explainability & Interpretability (2025-2026)](#explainability--interpretability-2025-2026)
+    - [Reliability, Safety & Evaluation (2025-2026)](#reliability-safety--evaluation-2025-2026)
+    - [RAG & Retrieval Methods (2024-2026)](#rag--retrieval-methods-2024-2026)
     - [Transformer Models and RoBERTa (2023-2025)](#transformer-models-and-roberta-2023-2025)
     - [Multimodal Sentiment Analysis (2024-2025)](#multimodal-sentiment-analysis-2024-2025)
     - [Multilingual and Cross-lingual Sentiment Analysis (2024-2025)](#multilingual-and-cross-lingual-sentiment-analysis-2024-2025)
@@ -444,6 +471,261 @@ Recent models support extensive language coverage including:
 
 [Back to Top](#table-of-contents)
 
+## LLM Techniques for Sentiment Analysis
+
+A comprehensive guide to applying Large Language Models to sentiment analysis using modern prompting, retrieval, and fine-tuning strategies.
+
+### Prompt Engineering
+
+Designing effective prompts is the fastest route to high-accuracy sentiment classification with LLMs—no retraining required.
+
+#### Techniques
+
+* **Zero-Shot Prompting** — Ask the model to classify sentiment directly with no examples. Surprisingly competitive on simple polarity tasks.
+* **Few-Shot Prompting** — Prepend 3–8 labeled examples. GPT-4o with few-shot + CoT achieves **84.54% F1** (text classification) and **99% F1** (sentiment analysis) [[source]](https://aclanthology.org/2024.findings-naacl.246.pdf).
+* **Chain-of-Thought (CoT)** — Instruct the model to reason step-by-step before producing a label. Boosts irony detection by up to **46%** on Gemini-1.5-flash [[paper]](https://arxiv.org/abs/2601.08302).
+* **Multi-Chain CoT** — Aggregates multiple reasoning paths to resolve ambiguous sentiment cues [[paper]](https://www.mdpi.com/2076-3417/15/22/12225).
+* **Domain Knowledge CoT (DK-CoT)** — Injects domain knowledge (e.g. financial terminology) into the reasoning chain before classification [[paper]](https://link.springer.com/article/10.1007/s10791-025-09573-7).
+* **Self-Consistency** — Sample multiple completions and take the majority vote. Reduces variance caused by stochastic decoding.
+* **Sentiment-Controlled Prompts** — Steer output emotion via prompt phrasing; few-shot with human-written examples is the most effective control strategy [[paper]](https://arxiv.org/abs/2602.06692).
+
+#### Key Findings (2025-2026)
+
+* GPT-4o **without** CoT outperforms all tested models on zero-shot financial sentiment (GPT-4o, GPT-4.1, o3-mini comparison) [[paper]](https://dl.acm.org/doi/10.1145/3768292.3770341).
+* Negative prompts reduce factual accuracy and amplify bias; positive prompts increase verbosity [[paper]](https://arxiv.org/abs/2503.13510).
+* Accuracy can fluctuate ±10% across identical runs — prompt stability matters as much as prompt design.
+
+#### Tools & Guides
+
+* [Prompt Engineering Guide — Sentiment Classification](https://www.promptingguide.ai/prompts/classification/sentiment)
+* [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
+* [Comprehensive Taxonomy of Prompt Engineering Techniques](https://link.springer.com/article/10.1007/s11704-025-50058-z)
+
+---
+
+### In-Context Learning & Few-Shot Methods
+
+* **Zero-shot SLM Ensembles** — Combining multiple Small Language Models rivals proprietary LLMs at a fraction of the cost [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1566253525007389).
+* **Multi-Agent LLMs** — Route different sentiment sub-tasks (coarse polarity, fine-grained emotion, irony) to specialist agents; demonstrated for social media in 2026 [[paper]](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342053).
+* **LLM-Infused Multi-Module Transformer** — Injects LLM representations into a smaller model for few-shot emotion-aware sentiment [[paper]](https://www.sciencedirect.com/science/article/pii/S1566253525007407).
+
+---
+
+### Retrieval-Augmented Generation (RAG)
+
+RAG grounds LLM sentiment predictions in external knowledge, reducing hallucinations and enabling domain-specific adaptation without retraining.
+
+#### Architectures
+
+* **Naive RAG** — Retrieve → Read → Generate. Baseline architecture; FAISS or Elasticsearch for retrieval.
+* **Modular RAG** — Separate, swappable retrieval, reranking, and generation modules.
+* **Self-RAG / Corrective RAG (CRAG)** — Model iteratively decides when to retrieve and critiques its own output before producing a label (2025).
+* **Agentic RAG** — Embeds autonomous agents into the pipeline for planning, multi-hop retrieval, and tool use [[paper]](https://arxiv.org/abs/2501.09136).
+
+#### Frameworks & Tools
+
+* [LangChain](https://github.com/langchain-ai/langchain) — Modular LLM application framework; LCEL pipeline syntax makes sentiment pipelines composable. Introduced LangGraph for complex reasoning workflows (2025).
+* [LlamaIndex](https://github.com/run-llama/llama_index) — Data framework for LLM apps; 300+ integrations, 35% retrieval accuracy boost in 2025. Best for document-heavy sentiment pipelines.
+* [LangGraph](https://github.com/langchain-ai/langgraph) — Graph-based workflow orchestration for multi-step and agentic sentiment reasoning (2025).
+
+#### Key Statistics (2025)
+
+* 1,200+ RAG papers published on arXiv in 2024 alone vs. <100 in 2023.
+* 63.6% of enterprise RAG deployments use GPT-based models.
+* RAG evaluation survey: [[arXiv 2504.14891]](https://arxiv.org/abs/2504.14891).
+
+---
+
+### Parameter-Efficient Fine-Tuning (PEFT)
+
+Fine-tune LLMs for sentiment without updating all parameters — dramatically reduces memory and compute.
+
+#### Methods
+
+* **LoRA (Low-Rank Adaptation)** — Freezes base weights, trains low-rank decomposition matrices. ~27–30 GB training memory.
+    * LLaMA-3 + LoRA: **86.89% accuracy** on Financial PhraseBank [[paper]](https://link.springer.com/article/10.1007/s10586-025-05865-1).
+    * [PEFT Library](https://github.com/huggingface/peft) (Hugging Face)
+
+* **QLoRA (Quantized LoRA)** — Quantizes backbone to 4-bit, trains LoRA adapters. ~17–18 GB training memory. Enables 65B models on a single 48 GB GPU.
+    * LLaMA-3 + QLoRA: **91.2% accuracy / 0.908 F1** on IMDB, **85.6% / 0.849 F1** on Twitter [[paper]](https://journals.adbascientific.com/csai/article/view/112).
+    * QLoRA for Financial SA: up to **48% accuracy improvement** over baseline [[paper]](https://www.researchgate.net/publication/388119978_Sentiment_Analysis_with_LLMs_Evaluating_QLoRA_Fine-Tuning_Instruction_Strategies_and_Prompt_Sensitivity).
+    * [QLoRA Repository](https://github.com/artidoro/qlora)
+
+* **LoRAFusion** — Kernel-level QLoRA optimizations targeting 4-bit inference efficiency (EuroSys 2026) [[paper]](https://arxiv.org/html/2510.00206v1).
+
+* **Multimodal LoRA** — Applies LoRA fine-tuning to vision-language LLMs (VLCLNet) for multimodal sentiment analysis [[paper]](https://dl.acm.org/doi/10.1145/3709147).
+
+#### Tutorials
+
+* [QLoRA Official Guide](https://arxiv.org/abs/2305.14314)
+* [2025 Guide to Fine-Tuning: LoRA, QLoRA & Transfer Learning](https://medium.com/@dewasheesh.rana/the-ultimate-2025-guide-to-llm-slm-fine-tuning-sampling-lora-qlora-transfer-learning-5b04fc73ac87)
+* [Keras: LoRA and QLoRA fine-tuning of Gemma](https://keras.io/examples/keras_recipes/parameter_efficient_finetuning_of_gemma_with_lora_and_qlora/)
+
+---
+
+### Instruction Tuning & Alignment
+
+Aligning LLMs to produce correctly-formatted sentiment labels and reliable confidence scores.
+
+#### Methods
+
+* **Supervised Fine-Tuning (SFT)** — Trains on (instruction, sentiment-label) pairs to steer output format.
+* **RLHF (Reinforcement Learning from Human Feedback)** — PPO-based training. SOTA on complex tasks; only 8% unsafe outputs under adversarial testing.
+* **DPO (Direct Preference Optimization)** — Simpler, no reward model needed. Outperforms RLHF for sentiment-controlled generation. [[paper]](https://arxiv.org/abs/2305.18290)
+* **RLAIF** — Replaces human annotators with an AI judge; scales sentiment preference data cheaply.
+
+#### Key Survey
+
+* [Comprehensive Survey of LLM Alignment: RLHF, RLAIF, PPO, DPO and More](https://arxiv.org/abs/2407.16216) (2024)
+
+[Back to Top](#table-of-contents)
+
+## LLM Evaluation & Benchmarks for Sentiment Analysis
+
+### Benchmark Frameworks
+
+* **SentiEval** — Proposed comprehensive LLM evaluation benchmark covering 13 SA task types on 26 datasets. Highlights gap between LLM and fine-tuned SLM on complex tasks. [[paper]](https://aclanthology.org/2024.findings-naacl.246/)
+* **TruthfulQA** — Tests whether LLMs produce truthful answers; used to cross-reference hallucination rates in sentiment contexts.
+* **HallucinationEval** — Dedicated benchmark for measuring LLM hallucination across NLP tasks including sentiment.
+* **SemEval-2025 Task 10** — Multilingual characterization of subjectivity in news articles [[proceedings]](https://aclanthology.org/2025.semeval-1.331.pdf).
+* **SemEval-2026 Task 3** — Dimensional Aspect-Based Sentiment Analysis on Customer Reviews (valence-arousal framework). Co-located with ACL 2026, San Diego. [[call for participation]](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
+
+### Evaluation Metrics
+
+| Metric | Use Case |
+|--------|----------|
+| Accuracy / F1 | Standard classification performance |
+| Macro-F1 | Class-balanced evaluation (important for skewed SA datasets) |
+| TARr@N / TARa@N | **Inference stability** — measures output variance across N identical runs |
+| Confidence Calibration | Whether model confidence correlates with actual accuracy |
+| ROUGE / BLEU | For rationale/explanation quality in generative SA |
+| Perplexity | Language model fit on sentiment corpora |
+
+### Model Performance Leaderboard (2025-2026)
+
+| Model | Overall SA Accuracy | Notes |
+|-------|--------------------|----|
+| GPT-4o (few-shot + CoT) | ~99% F1 | Best on structured tasks [[NAACL 2024]](https://aclanthology.org/2024.findings-naacl.246.pdf) |
+| Claude 3.7 | 79% | Best overall accuracy in 2025 benchmark |
+| Claude 4.5 | 75% avg / 82% emotion detection | 2025 benchmark |
+| GPT-4.1 | ~75–78% | Varies by domain |
+| GPT-4o (zero-shot) | Best on financial SA | No CoT outperforms CoT variants [[paper]](https://dl.acm.org/doi/10.1145/3768292.3770341) |
+| DeepSeek V3 | 70% | Competitive open-weight model |
+| LLaMA-3 + QLoRA | 91.2% on IMDB / 85.6% Twitter | Fine-tuned, not zero-shot |
+
+### Explainable Sentiment Analysis Dataset
+
+* [Explainable Sentiment Analysis Dataset](https://ieee-dataport.org/documents/explainable-sentiment-analysis-dataset) — Released February 2025 on IEEE DataPort. Includes Amazon Reviews and IMDB, annotated with ground-truth sentiment labels, model predictions (GPT-4o, GPT-4o-mini, DeepSeek-R1), and fine-grained classifications for explainability evaluation.
+
+[Back to Top](#table-of-contents)
+
+## Explainable Sentiment Analysis
+
+Understanding *why* a model produced a sentiment label — essential for production reliability, regulatory compliance, and debugging.
+
+### Methods & Tools
+
+#### Post-hoc Explanations
+
+* **SHAP (SHapley Additive Explanations)**
+    * Provides both **global** (feature importance across dataset) and **local** (single-prediction) explanations.
+    * Applied layer-by-layer across LLM components (embedding → encoder → decoder → attention) for granular sentiment attribution.
+    * [SHAP Library](https://github.com/slundberg/shap)
+    * Recent benchmark: SHAP outperforms LIME on consistency and faithfulness [[paper]](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202400304).
+
+* **LIME (Local Interpretable Model-Agnostic Explanations)**
+    * Perturbs input text and fits a local surrogate model to explain individual predictions.
+    * Widely used to explain chatbot responses and customer sentiment decisions.
+    * [LIME Library](https://github.com/marcotcr/lime)
+    * Limitation: local explanations only; no global view.
+
+* **ModernBERT-XAI** — Fine-tunes ModernBERT on IMDb and integrates SHAP + LIME for interpretable sentiment analysis. Released December 2025. [[paper]](https://www.tandfonline.com/doi/full/10.1080/21642583.2025.2600795)
+
+* **Attention Visualization**
+    * Maps which tokens most influenced the sentiment decision.
+    * Sentence-level attention visualization for LLMs: [[NAACL 2025 Demo]](https://aclanthology.org/2025.naacl-demo.27.pdf).
+
+#### Causal and Counterfactual Methods
+
+* **Counterfactual Testing** — Generate minimally-modified inputs that flip the sentiment label to identify causal features.
+* **Causal Reasoning** — Grounding predictions in causal graphs reduces both bias and hallucination.
+
+### Survey Papers
+
+* [LLMs for Explainable AI: A Comprehensive Survey](https://arxiv.org/html/2504.00125v1) — April 2025. Covers how LLMs can themselves serve as explainers.
+* [Integration of XAI Techniques with LLMs for Enhanced Interpretability for Sentiment Analysis](https://arxiv.org/abs/2503.11948) — March 2025.
+* [SHAP and LIME: A Perspective on XAI Methods](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202400304) — 2025.
+
+### Practical Guides
+
+* [SHAP + LIME for Real-Time Predictions in Production](https://www.javacodegeeks.com/2025/03/explainable-ai-in-production-shap-and-lime-for-real-time-predictions.html) — March 2025.
+* [DataCamp: Explainable AI with LIME, SHAP, and InterpretML](https://www.datacamp.com/tutorial/explainable-ai-understanding-and-trusting-machine-learning-models)
+
+[Back to Top](#table-of-contents)
+
+## LLM Reliability & Safety in Sentiment Analysis
+
+Critical considerations before deploying LLM-based sentiment classifiers in production.
+
+### Hallucination
+
+| Model | Hallucination Rate | Source |
+|-------|--------------------|--------|
+| GPT-4 | ~28.6% | medical systematic reviews |
+| GPT-3.5 | ~39.6% | medical systematic reviews |
+| Bard | ~91.4% | medical systematic reviews |
+| Sentiment SA tasks | **Lower** | Pre-defined labels constrain generation |
+
+**Mitigation Strategies:**
+* **RAG** — Grounds predictions in retrieved evidence.
+* **Multi-LLM Consensus** — Vote across 3+ models; agreement increases reliability.
+* **Knowledge Graphs** — Inject structured facts at pretraining or inference time.
+* **Self-Consistency Decoding** — Sample multiple completions, take majority.
+* **Chain-of-Thought + Verification** — Have model verify its own reasoning step.
+
+**Survey:** [Large Language Models Hallucination: A Comprehensive Survey](https://arxiv.org/html/2510.06265v2) (October 2025)
+
+---
+
+### Bias & Fairness
+
+Five key bias-detection metrics applied to sentiment models:
+
+1. **Counterfactual Testing** — Swap demographic attributes; check if sentiment label changes.
+2. **Stereotype Detection** — Probe for systematically biased associations.
+3. **Sentiment & Toxicity Analysis** — Measure polarity asymmetry across demographic groups.
+4. **Acceptance/Rejection Rates** — Track differential response rates per group.
+5. **Embedding-Based Metrics** — Measure cosine distance between group-specific embeddings.
+
+**Survey:** [Bias in Large Language Models: Origin, Evaluation, and Mitigation](https://arxiv.org/html/2411.10915v1) (November 2024)
+**Paper:** [Towards Trustworthy LLMs: Debiasing and Dehallucinating](https://link.springer.com/article/10.1007/s10462-024-10896-y) (2024)
+
+---
+
+### Uncertainty & Variability
+
+* **Model Variability Problem (MVP)** — Identical prompts produce different sentiment labels across runs (up to ±10% accuracy).
+* **Epistemic Uncertainty** — Model uncertainty due to lack of knowledge; mitigated by larger training sets or RAG.
+* **Aleatoric Uncertainty** — Irreducible noise in ambiguous or contradictory sentiment texts.
+* **Stability Metrics** — TARr@N and TARa@N measure inference stability across N runs [[paper]](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1609097/full).
+
+**Key Paper:** [Model Uncertainty and Variability in LLM-Based Sentiment Analysis: Challenges, Mitigation Strategies, and the Role of Explainability](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1609097/full) — Frontiers in AI, 2025.
+
+---
+
+### Domain Instability
+
+LLMs exhibit **12–18% higher accuracy degradation** on specialized domains (finance, healthcare, legal) vs. general text. Key causes:
+* Technical jargon misinterpreted as neutral
+* Sarcasm and irony patterns differ by domain
+* Context-dependent sentiment cues absent from training data
+
+**Mitigation:** Domain-specific fine-tuning (FinBERT, QF-LLM), knowledge-augmented prompting, domain-aware RAG.
+
+**Paper:** [QF-LLM: Financial Sentiment Analysis with Quantized LLM](https://dl.acm.org/doi/10.1145/3764727.3764731) (2025)
+
+[Back to Top](#table-of-contents)
+
 ### International Workshops
 
 * SemEval Challenges International Workshop on Semantic Evaluation 
@@ -477,6 +759,82 @@ authors conduct exhaustive experiments to investigate different fine-tuning meth
 [BERT](https://arxiv.org/pdf/1810.04805.pdf) 
 (Bidirectional Encoder Representations from Transformers) on text
 classification task and provide a general solution for BERT fine-tuning
+
+### Prompt Engineering & LLM Methods (2025-2026)
+
+* [Enhancing Sentiment Classification and Irony Detection through Advanced Prompt Engineering Techniques](https://arxiv.org/abs/2601.08302) — Evaluates few-shot, CoT, and self-consistency prompting; CoT boosts irony detection by **46%** on Gemini-1.5-flash. arXiv January 2026.
+
+* [Evaluating Prompt Engineering Strategies for Sentiment Control in AI-Generated Texts](https://arxiv.org/abs/2602.06692) — Compares zero-shot, few-shot, and CoT for emotion steering; few-shot with human examples is most effective. arXiv February 2026.
+
+* [Enhancing Granular Sentiment Classification with Chain-of-Thought Prompting in Large Language Models](https://arxiv.org/abs/2505.04135) — Focuses on fine-grained (multi-class) sentiment with CoT prompting. arXiv May 2025.
+
+* [Prompt Sentiment: The Catalyst for LLM Change](https://arxiv.org/abs/2503.13510) — Shows prompt sentiment itself influences model accuracy: negative prompts reduce factual accuracy, positive prompts increase verbosity. arXiv March 2025.
+
+* [Reasoning or Overthinking: Evaluating LLMs on Financial Sentiment Analysis](https://dl.acm.org/doi/10.1145/3768292.3770341) — GPT-4o, GPT-4.1, o3-mini comparison; GPT-4o without CoT achieves best performance. ACM AI in Finance 2025.
+
+* [Leveraging LLM as News Sentiment Predictor: A Knowledge-Enhanced Strategy](https://link.springer.com/article/10.1007/s10791-025-09573-7) — Domain Knowledge CoT (DK-CoT) improves financial news sentiment prediction with GLM. Springer Discover Computing 2025.
+
+* [Designing Multi-Agent LLMs for Fine-Grained User Sentiment Detection on Social Media](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342053) — Routes sub-tasks to specialist agents; PLOS ONE February 2026.
+
+* [Sentiment Analysis in the Era of Large Language Models: A Reality Check](https://aclanthology.org/2024.findings-naacl.246/) — Benchmarks LLMs across 26 datasets, 13 tasks; introduces SentiEval. NAACL Findings 2024.
+
+* [Zero- and Few-Shot Prompting with LLMs: A Comparative Study with Fine-tuned Models for Bangla Sentiment Analysis](https://aclanthology.org/2024.lrec-main.1549/) — LREC-COLING 2024; compares Flan-T5, GPT-4, Bloomz.
+
+* [Exploring Zero-Shot SLM Ensembles as an Alternative to LLMs for Sentiment Analysis](https://www.sciencedirect.com/science/article/abs/pii/S1566253525007389) — Small Language Model ensembles rival proprietary LLMs at lower cost. Information Fusion 2025.
+
+* [LLM-Infused Multi-Module Transformer for Emotion-Aware Sentiment Analysis in Few-Shot Scenarios](https://www.sciencedirect.com/science/article/pii/S1566253525007407) — Injects LLM representations into a smaller model for efficient few-shot SA. Information Fusion 2025.
+
+* [Multi-Chain of Thought Prompt Learning for Aspect-Based Sentiment Analysis](https://www.mdpi.com/2076-3417/15/22/12225) — Multi-path reasoning patterns for nuanced ABSA. Applied Sciences 2025.
+
+* [QF-LLM: Financial Sentiment Analysis with Quantized LLM](https://dl.acm.org/doi/10.1145/3764727.3764731) — Quantization for cost-effective financial SA deployment. ACM AIDF 2025.
+
+### Parameter-Efficient Fine-Tuning (2025-2026)
+
+* [Parameter-Efficient Fine-Tuning of LLaMA Models for Financial Sentiment Classification](https://link.springer.com/article/10.1007/s10586-025-05865-1) — LLaMA-3 + LoRA achieves **86.89% accuracy** on Financial PhraseBank. Cluster Computing 2025.
+
+* [Sentiment Analysis with LLMs: Evaluating QLoRA Fine-Tuning, Instruction Strategies, and Prompt Sensitivity](https://www.researchgate.net/publication/388119978_Sentiment_Analysis_with_LLMs_Evaluating_QLoRA_Fine-Tuning_Instruction_Strategies_and_Prompt_Sensitivity) — QLoRA delivers up to 48% accuracy improvement. 2025.
+
+* [Benchmarking QLoRA-Fine-Tuned LLaMA and DeepSeek Models for Sentiment Analysis](https://journals.adbascientific.com/csai/article/view/112) — LLaMA-3 QLoRA: 91.2% IMDB, 85.6% Twitter F1. CSAI 2026.
+
+* [Multimodal Large Language Model with LoRA Fine-Tuning for Multimodal Sentiment Analysis](https://dl.acm.org/doi/10.1145/3709147) — VLCLNet applies LoRA to vision-language LLMs for MABSA. ACM TIST 2025.
+
+* [LoRAFusion: Efficient LoRA Fine-Tuning for LLMs](https://arxiv.org/html/2510.00206v1) — Kernel-level optimizations for 4-bit QLoRA (EuroSys 2026).
+
+* [Analyzing LLaMA3 Performance on Classification Using LoRA and QLoRA Techniques](https://www.mdpi.com/2076-3417/15/6/3087) — Comprehensive LoRA vs QLoRA ablation study. MDPI Applied Sciences March 2025.
+
+* [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) — Original QLoRA paper enabling 65B parameter fine-tuning on a single 48 GB GPU.
+
+### Explainability & Interpretability (2025-2026)
+
+* [ModernBERT-XAI: Sentiment Analysis with Layer-Wise Learning and SHAP-LIME Interpretability](https://www.tandfonline.com/doi/full/10.1080/21642583.2025.2600795) — Fine-tunes ModernBERT on IMDb with integrated SHAP + LIME. December 2025.
+
+* [Integration of Explainable AI Techniques with LLMs for Enhanced Interpretability for Sentiment Analysis](https://arxiv.org/abs/2503.11948) — Applies SHAP layer-by-layer across LLM components. arXiv March 2025.
+
+* [LLMs for Explainable AI: A Comprehensive Survey](https://arxiv.org/html/2504.00125v1) — LLMs as explainers; covers XAI methods across NLP tasks. arXiv April 2025.
+
+* [A Perspective on Explainable AI Methods: SHAP and LIME](https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202400304) — Comparative evaluation of SHAP vs LIME faithfulness and consistency. Advanced Intelligent Systems 2025.
+
+### Reliability, Safety & Evaluation (2025-2026)
+
+* [Model Uncertainty and Variability in LLM-Based Sentiment Analysis: Challenges, Mitigation Strategies, and the Role of Explainability](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1609097/full) — Introduces TARr@N stability metrics; Frontiers in AI 2025.
+
+* [Large Language Models Hallucination: A Comprehensive Survey](https://arxiv.org/html/2510.06265v2) — GPT-4: 28.6%, GPT-3.5: 39.6% hallucination rates. arXiv October 2025.
+
+* [Bias in Large Language Models: Origin, Evaluation, and Mitigation](https://arxiv.org/html/2411.10915v1) — Five bias-detection metrics applicable to sentiment models. arXiv November 2024.
+
+* [Towards Trustworthy LLMs: Debiasing and Dehallucinating](https://link.springer.com/article/10.1007/s10462-024-10896-y) — Causal reasoning reduces both bias and hallucinations. AIR 2024.
+
+* [Comparing LLMs and Human Annotators in Latent Content Analysis of Sentiment, Political Leaning, Emotional Intensity and Sarcasm](https://www.nature.com/articles/s41598-025-96508-3) — Multi-model comparison (GPT-3.5, GPT-4, GPT-4o, Llama-3.1, Mixtral). Scientific Reports 2025.
+
+* [Evaluating LLMs for Sentiment Analysis on Vaccine Posts from Social Media](https://pmc.ncbi.nlm.nih.gov/articles/PMC12526656/) — Healthcare/public health domain evaluation. JMIR Formative Research 2025.
+
+### RAG & Retrieval Methods (2024-2026)
+
+* [Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG](https://arxiv.org/abs/2501.09136) — Covers Self-RAG, Corrective RAG, and agent-driven retrieval pipelines for LLM applications. arXiv January 2025.
+
+* [RAG Evaluation in the Era of LLMs: A Comprehensive Survey](https://arxiv.org/abs/2504.14891) — Reviews factual accuracy, safety, and computational efficiency metrics for RAG. arXiv April 2025.
+
+* [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997) — The foundational RAG survey (2,000+ citations); covers naive, advanced, and modular RAG.
 
 ### Transformer Models and RoBERTa (2023-2025)
 
