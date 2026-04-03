@@ -840,7 +840,7 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [Improving sentiment classification using a RoBERTa-based hybrid model](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2023.1292010/full) - Hybrid RoBERTa-GRU model achieving superior performance on sentiment classification (2023)
 
-* [Advancing Sentiment Analysis: Evaluating RoBERTa against Traditional and Deep Learning Models](https://etasr.com/index.php/ETASR/article/view/9703) - Comprehensive comparison showing RoBERTa achieving 96.30% accuracy and F1-scores of 98.11% (2024)
+* [Advancing Sentiment Analysis: Evaluating RoBERTa against Traditional and Deep Learning Models](https://etasr.com/index.php/ETASR/article/view/9703) - Comprehensive comparison showing RoBERTa achieving 96.30% accuracy and F1-scores of 98.11% on specific sentiment benchmarks (see paper for datasets and experimental setup) (2024)
 
 * [Exploring transformer models for sentiment classification: A comparison of BERT, RoBERTa, ALBERT, DistilBERT, and XLNet](https://onlinelibrary.wiley.com/doi/10.1111/exsy.13701) - Comparative study of transformer models with RoBERTa consistently outperforming others (2024)
 
