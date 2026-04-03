@@ -292,7 +292,7 @@ If you want to contribute to this list (please do), send me a pull request or co
     * [GPT-3.5 Turbo](https://platform.openai.com/docs/models) - Cost-effective alternative for sentiment analysis tasks
 
 * **Claude Family (Anthropic)**
-    * [Claude 4.5](https://www.anthropic.com/claude) - Achieved 75% average accuracy across sentiment analysis tasks, with 82% accuracy in emotion detection (2025 benchmark)
+    * [Claude 4.5](https://www.anthropic.com/claude) - Advanced large language model widely used for sentiment and emotion analysis tasks, with strong performance on contemporary benchmarks
     * Claude 3.5 Sonnet - High-performance model for nuanced sentiment understanding
 
 * **Llama Family (Meta)**
