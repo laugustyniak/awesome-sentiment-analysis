@@ -418,7 +418,7 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
 
 ### State-of-the-Art Models (2024-2025)
 
-* **XLM-RoBERTa (XLM-R)** - Large multilingual Transformer consistently outperforms other cross-lingual approaches in zero-shot classification by 3%+
+* **XLM-RoBERTa (XLM-R)** - Large multilingual Transformer for cross-lingual and zero-shot sentiment classification
     [[Hugging Face]](https://huggingface.co/xlm-roberta-base)
     * Trained on 100 languages
     * Achieves 91.9% accuracy on multilingual sentiment tasks
