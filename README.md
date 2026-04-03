@@ -333,7 +333,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * **XLM-RoBERTa**
     * [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base) - Trained on 100 languages, achieves 91.9% accuracy on multilingual sentiment tasks (Facebook AI, 2020)
-    * Outperforms other cross-lingual approaches by 3%+ in zero-shot settings
+    * Outperforms other cross-lingual approaches by 3%+ in zero-shot settings on XNLI and MLQA benchmarks ([Conneau et al., 2020](https://arxiv.org/abs/1911.02116))
 
 * **mBERT (Multilingual BERT)**
     * [mBERT](https://huggingface.co/bert-base-multilingual-cased) - Supports cross-lingual sentiment analysis with 92% accuracy on specialized corpora
