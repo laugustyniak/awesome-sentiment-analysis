@@ -245,7 +245,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * IMDB Deep Context Reviews - Extended version capturing movie reviews with richer contextual information from IMDB's vast user base (2024-2025).
 
-* [Large-scale English Comment Dataset](https://huggingface.co/datasets) - Collection of 241,000+ English-language comments from various online platforms (updated 2025).
+* Large-scale English Comment Dataset - Collection of 241,000+ English-language comments from various online platforms (updated 2025).
 
 * [MLDoc Dataset](https://github.com/facebookresearch/MLDoc) - Multilingual document classification corpus used for cross-lingual sentiment analysis. State-of-the-art adversarial training achieves 88.48% average accuracy (2024).
 
