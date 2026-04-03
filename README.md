@@ -5,7 +5,7 @@ A curated list of awesome sentiment analysis frameworks, libraries, software (by
 **Latest Update (April 2026)**: Comprehensive update covering 2021-2026 advances including:
 - Large Language Models (GPT-4, Claude, Llama, Gemini, Mixtral, DeepSeek)
 - Modern Transformers (RoBERTa, DistilBERT, ALBERT, XLM-RoBERTa, ModernBERT)
-- Multimodal Sentiment Analysis (vision-language models, multimodal LLMs)
+- Multimodal Sentiment Analysis (vision-language models)
 - Multilingual and Cross-lingual Methods (Brand24/MMS — NeurIPS 2023, SemEval-2026)
 - **NEW: LLM Techniques** — Prompt Engineering, CoT, RAG, LoRA/QLoRA, RLHF, DPO
 - **NEW: LLM Evaluation & Benchmarks** — SentiEval, stability metrics, model leaderboard
