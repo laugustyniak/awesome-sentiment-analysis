@@ -318,7 +318,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 * **RoBERTa (Robustly Optimized BERT)**
     * [RoBERTa-base, RoBERTa-large](https://huggingface.co/roberta-base) - Improved BERT training achieving 88.5-96.30% accuracy (Facebook AI, 2019)
     * [twitter-roberta-base-sentiment](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) - Fine-tuned for social media (69.54% on TweetFinSent)
-    * Consistently outperforms BERT on sentiment benchmarks with F1-scores up to 98.11%
+    * Often outperforms BERT on sentiment benchmarks; reported F1-scores can exceed 90% and approach 98% on specific datasets and tasks (results are highly dataset- and setup-dependent)
 
 * **DistilBERT**
     * [DistilBERT](https://huggingface.co/distilbert-base-uncased) - 40% smaller, 60% faster than BERT while retaining 97% of performance (Hugging Face, 2019)
