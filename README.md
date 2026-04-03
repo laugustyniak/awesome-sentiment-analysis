@@ -427,7 +427,7 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
     * 91.9% accuracy on restaurant reviews (2024)
     * Surpasses BERT (87.8%) and RoBERTa (88.5%)
 
-* **Multilingual BERT (mBERT)** - Supports 104 languages
+* **Multilingual BERT (mBERT)** - Pretrained on 104 Wikipedia languages [[Devlin et al., 2019]](https://arxiv.org/abs/1810.04805)
     * 92% accuracy on specialized corpora (e.g., Kurdish Medical Corpus)
     * Effective for cross-lingual embedding with MUSE, BiCVM, BiSkip
 
