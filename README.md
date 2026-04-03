@@ -321,7 +321,7 @@ If you want to contribute to this list (please do), send me a pull request or co
     * Often outperforms BERT on sentiment benchmarks; reported F1-scores can exceed 90% and approach 98% on specific datasets and tasks (results are highly dataset- and setup-dependent)
 
 * **DistilBERT**
-    * [DistilBERT](https://huggingface.co/distilbert-base-uncased) - 40% smaller, 60% faster than BERT while retaining 97% of performance (Hugging Face, 2019)
+    * [DistilBERT](https://huggingface.co/distilbert-base-uncased) - 40% smaller, 60% faster than BERT while retaining 97% of performance (Hugging Face, 2019; as reported in the original paper [Sanh et al., 2019](https://arxiv.org/abs/1910.01108))
 
 * **ALBERT (A Lite BERT)**
     * [ALBERT](https://huggingface.co/albert-base-v2) - Parameter-efficient version of BERT with reduced memory consumption (Google, 2019)
