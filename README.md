@@ -98,7 +98,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [Python, cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) - RoBERTa model fine-tuned for Twitter sentiment analysis, achieving state-of-the-art performance on social media text (updated 2024).
 
-* [Python, ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Financial sentiment analysis model based on ModernBERT architecture (released July 2025), specialized for financial texts, earnings calls, and analyst reports. Improves accuracy by up to 48% over existing FinBERT models.
+* [Python, ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Financial sentiment analysis model based on ModernBERT architecture (released July 2025), specialized for financial texts, earnings calls, and analyst reports, and reporting improved performance over earlier FinBERT variants on multiple financial sentiment benchmarks (see model card for details).
 
 * [Python, tabularisai/multilingual-sentiment-analysis](https://huggingface.co/tabularisai/multilingual-sentiment-analysis) - Multilingual sentiment model supporting multiple languages simultaneously (released December 2024).
 
