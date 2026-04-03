@@ -37,7 +37,7 @@ If you want to contribute to this list (please do), send me a pull request or co
         - [Multilingual Transformers](#multilingual-transformers)
         - [Domain-Specific Models](#domain-specific-models)
         - [Decoder-based Models](#decoder-based-models)
-        - [Hybrid Architectures (2023-2025)](#hybrid-architectures-2023-2025)
+        - [Hybrid Pretrained / Multi-paradigm Architectures (2023-2025)](#hybrid-architectures-2023-2025)
 - [Multimodal Sentiment Analysis](#multimodal-sentiment-analysis)
     - [Overview](#overview)
     - [Recent Models and Frameworks (2024-2025)](#recent-models-and-frameworks-2024-2025)
