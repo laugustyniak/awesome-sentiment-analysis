@@ -100,7 +100,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [Python, ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Financial sentiment analysis model based on ModernBERT architecture (released July 2025), specialized for financial texts, earnings calls, and analyst reports, and reporting improved performance over earlier FinBERT variants on multiple financial sentiment benchmarks (see model card for details).
 
-* [Python, tabularisai/multilingual-sentiment-analysis](https://huggingface.co/tabularisai/multilingual-sentiment-analysis) - Multilingual sentiment model supporting multiple languages simultaneously (released December 2024).
+* [Python, tabularisai/multilingual-sentiment-analysis](https://huggingface.co/tabularisai/multilingual-sentiment-analysis) - Multilingual sentiment analysis project targeting support for multiple languages; see the Hugging Face page for current availability and details.
 
 * [Python, Flair](https://github.com/flairNLP/flair) - Modern NLP framework with multilingual support and state-of-the-art sentiment analysis models, particularly strong for cross-lingual tasks.
 
