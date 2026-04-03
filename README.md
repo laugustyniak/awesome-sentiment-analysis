@@ -306,7 +306,7 @@ If you want to contribute to this list (please do), send me a pull request or co
     * [Mixtral 8x7B](https://mistral.ai/news/mixtral-of-experts/) - Mixture-of-experts model showing competitive performance in sentiment classification (2024)
 
 * **Grok (xAI)**
-    * [Grok 4](https://x.ai/grok) - Specialized in monitoring online sentiment and identifying emerging trends on social media with real-time X/Twitter integration. Excels at tracking public opinion, brand perception, and viral content (released July 2025)
+    * [Grok 4](https://x.ai/grok) - Large language model by xAI that can be applied to sentiment and trend analysis tasks, including social media data.
 
 #### Encoder-based Transformers (BERT Family)
 
