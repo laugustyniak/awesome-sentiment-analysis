@@ -342,7 +342,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * **Financial Sentiment**
     * [FinBERT](https://huggingface.co/ProsusAI/finbert) - BERT fine-tuned on financial texts (ProsusAI)
-    * [ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Latest financial sentiment model based on ModernBERT architecture, up to 48% accuracy improvement (July 2025)
+    * [ModernFinBERT](https://huggingface.co/tabularisai/ModernFinBERT) - Latest financial sentiment model based on the ModernBERT architecture; reports improved performance over earlier FinBERT variants (see model card for benchmarks, accessed July 2025)
     * [BloombergGPT](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/) - 50B parameter LLM for financial NLP including sentiment analysis
 
 * **Healthcare/Mental Health**
