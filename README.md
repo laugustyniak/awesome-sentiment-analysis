@@ -346,7 +346,7 @@ If you want to contribute to this list (please do), send me a pull request or co
     * [BloombergGPT](https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/) - 50B parameter LLM for financial NLP including sentiment analysis
 
 * **Healthcare/Mental Health**
-    * [MentalRoBERTa](https://huggingface.co/mental/mental-roberta-base) - RoBERTa-base model trained on mental health-related posts from Reddit, specialized for classifying depression, anxiety, PTSD, stress, suicidal ideation, and neutral content
+    * [MentalRoBERTa](https://huggingface.co/mental/mental-roberta-base) - RoBERTa-base model trained on mental health-related posts from Reddit for multi-label classification of mental health topics (e.g., depression, anxiety, PTSD, self-harm, suicidal ideation); intended for research use only and not as a diagnostic tool or crisis service
 
 #### Decoder-based Models
 
