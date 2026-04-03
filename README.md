@@ -243,7 +243,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * [TweetFinSent](https://github.com/TweetFinSent) - Financial sentiment dataset from Twitter. State-of-the-art models achieve 69.54% accuracy and 65.72% macro F1-score with adversarial training (2023-2024).
 
-* [IMDB Deep Context Reviews](https://www.kaggle.com/datasets) - Extended version capturing movie reviews with richer contextual information from IMDB's vast user base (2024-2025).
+* IMDB Deep Context Reviews - Extended version capturing movie reviews with richer contextual information from IMDB's vast user base (2024-2025).
 
 * [Large-scale English Comment Dataset](https://huggingface.co/datasets) - Collection of 241,000+ English-language comments from various online platforms (updated 2025).
 
