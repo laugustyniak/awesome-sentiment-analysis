@@ -312,7 +312,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 * **BERT (Bidirectional Encoder Representations from Transformers)**
     * [BERT-base, BERT-large](https://github.com/google-research/bert) - Original TensorFlow implementation (Google, 2018)
-    * [BERT Multilingual](https://huggingface.co/bert-base-multilingual-cased) - Supports 104 languages
+    * [Multilingual BERT (mBERT)](https://huggingface.co/bert-base-multilingual-cased) - Supports 104 languages
     * Typical performance: 87.8% accuracy on sentiment tasks
 
 * **RoBERTa (Robustly Optimized BERT)**
