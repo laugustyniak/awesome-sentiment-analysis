@@ -446,7 +446,7 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
 
 ### Performance Benchmarks
 
-* **Brand24/MMS Benchmark**: The most extensive multilingual benchmark with 79 datasets, 27 languages, 6.16M samples (NeurIPS 2023)
+* **Brand24/MMS Benchmark**: Large-scale multilingual benchmark with 79 datasets, 27 languages, 6.16M samples (NeurIPS 2023)
     [[dataset]](https://huggingface.co/datasets/Brand24/mms)
     [[interactive benchmark]](https://huggingface.co/spaces/Brand24/mms_benchmark)
     [[arXiv]](https://arxiv.org/abs/2306.07902)
