@@ -94,7 +94,7 @@ If you want to contribute to this list (please do), send me a pull request or co
 
 ### Modern Transformer-based Libraries (2023-2026)
 
-* [Python, Hugging Face Transformers](https://huggingface.co/transformers) - State-of-the-art Natural Language Processing library with 215+ sentiment analysis models. Supports BERT, RoBERTa, DistilBERT, ALBERT, XLNet, and all modern transformer architectures. Simple 5-line integration for sentiment analysis with pre-trained models.
+* [Python, Hugging Face Transformers](https://huggingface.co/transformers) - State-of-the-art Natural Language Processing library with 215+ sentiment analysis models. Supports BERT, RoBERTa, DistilBERT, ALBERT, XLNet, and all modern transformer architectures, with simple integration for sentiment analysis using pre-trained models via an easy-to-use API.
 
 * [Python, cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) - RoBERTa model fine-tuned for Twitter sentiment analysis, achieving state-of-the-art performance on social media text (updated 2024).
 
