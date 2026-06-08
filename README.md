@@ -949,6 +949,7 @@ classification task and provide a general solution for BERT fine-tuning
 * [Aylien](https://developer.aylien.com/text-api-demo)
 * [Amazon Comprehend](https://aws.amazon.com/comprehend/features/)
 * [MS Cognitive Services](https://azure.microsoft.com/en-gb/services/cognitive-services/text-analytics/)
+* [TWZRD Agent Intel](https://intel.twzrd.xyz) - Trust scoring for NLP agent pipelines distributing text analysis via micropayments. Verify AI agent wallet identity before processing paid text analysis requests. Free MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 
 [Back to Top](#table-of-contents)
 
