@@ -920,6 +920,8 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [Stanford's cs224d lectures on Deep Learning for Natural Language Processing](https://cs224d.stanford.edu/lectures/) - course provided by Richard Socher.
 
+* [Build a brand monitoring agent](https://superhighway.walls.sh/guides/brand-monitoring-agent) - Python tutorial that searches news and the web for brand mentions, scrapes the full content, and uses an LLM to classify each mention's sentiment (positive/neutral/negative) and urgency for a daily digest.
+
 [Back to Top](#table-of-contents)
 
 ## Books
