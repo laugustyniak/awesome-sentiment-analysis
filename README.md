@@ -2,10 +2,10 @@
 
 A curated list of awesome sentiment analysis frameworks, libraries, software (by language), and of course academic papers and methods. In addition NLP lib useful in sentiment analysis. Inspired by awesome-machine-learning.
 
-**Latest Update (July 2026)**: Research refresh covering late-2025 through mid-2026 work:
+**Latest Update (July 2026)**: Research refresh covering 2025 through mid-2026 work:
 - **NEW: Reasoning Models for Sentiment Analysis** — DeepSeek-R1 evaluation, when reasoning helps vs. hurts (task-complexity study), self-consistent structured generation
-- **SemEval-2026 Task 3 (DimABSA)** — dimensional valence-arousal ABSA: task paper, data repository, and first system papers
-- **New ABSA work** — Arctic-ABSA (Snowflake), ZeroABSA (EMNLP 2025), multilingual ABSA evaluation with new German ASQP datasets (LREC 2026)
+- **SemEval-2026 Task 3 (DimABSA)** — dimensional valence-arousal ABSA: task paper, data repository, and a first system paper (SCSG)
+- **ABSA** — expanded Arctic-ABSA (Snowflake) entry, ZeroABSA (EMNLP 2025), multilingual ABSA evaluation with two new German datasets incl. the first German ASQP dataset (LREC 2026)
 - **Low-resource & cross-lingual** — TriLex lexicon expansion for African languages, Bengali-English cross-lingual sentiment-bias audit
 - **Financial SA** — fine-tuned lightweight open LLMs (Qwen3/Llama3 8B) outperforming FinBERT
 - **Multimodal** — QA-MoE quality-aware mixture-of-experts for robust multimodal SA
@@ -564,7 +564,7 @@ Fine-tune LLMs for sentiment without updating all parameters — dramatically re
 
 * **Multimodal LoRA** — Applies LoRA fine-tuning to vision-language LLMs (VLCLNet) for multimodal sentiment analysis [[paper]](https://dl.acm.org/doi/10.1145/3709147).
 
-#### Tutorials
+#### Fine-Tuning Guides
 
 * [QLoRA Official Guide](https://arxiv.org/abs/2305.14314)
 * [2025 Guide to Fine-Tuning: LoRA, QLoRA & Transfer Learning](https://medium.com/@dewasheesh.rana/the-ultimate-2025-guide-to-llm-slm-fine-tuning-sampling-lora-qlora-transfer-learning-5b04fc73ac87)
@@ -632,7 +632,7 @@ Reasoning-focused LLMs (DeepSeek-R1, OpenAI o3-style models) bring explicit chai
 | GPT-4.1 | ~75–78% | Varies by domain |
 | GPT-4o (zero-shot) | Best on financial SA | No CoT outperforms CoT variants [[paper]](https://dl.acm.org/doi/10.1145/3768292.3770341) |
 | DeepSeek V3 | 70% | Competitive open-weight model |
-| DeepSeek-R1 (5-shot) | 91.39% F1 (5-class) / 99.31% acc (binary) | Reasoning model; ~8× few-shot efficiency vs GPT-4o [[IEEE]](https://ieeexplore.ieee.org/document/11181065) |
+| DeepSeek-R1 (5-shot) | 91.39% F1 (5-class) / 99.31% acc (binary) | Task-specific 5-shot results — not directly comparable to the zero-shot rows [[IEEE]](https://ieeexplore.ieee.org/document/11181065) |
 | LLaMA-3 + QLoRA | 91.2% on IMDB / 85.6% Twitter | Fine-tuned, not zero-shot |
 
 ### Explainable Sentiment Analysis Dataset
@@ -793,7 +793,9 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [Task Complexity Matters: An Empirical Study of Reasoning in LLMs for Sentiment Analysis](https://arxiv.org/abs/2602.24060) — 504 configurations across seven model families on binary, five-class, and 27-class datasets; explicit reasoning degrades binary sentiment by up to −19.9 F1 pp but improves 27-class emotion recognition by up to +16.0 pp. arXiv February 2026.
 
-* [Explainable Sentiment Analysis with DeepSeek-R1: Performance, Efficiency, and Few-Shot Learning](https://arxiv.org/abs/2503.11655) — First comprehensive evaluation of DeepSeek-R1 (671B + distilled variants) vs GPT-4o/GPT-4o-mini for SA; 91.39% F1 (5-class) and 99.31% accuracy (binary) with 5 shots, with transparent reasoning traces. [[IEEE version]](https://ieeexplore.ieee.org/document/11181065) 2025.
+* [Explainable Sentiment Analysis with DeepSeek-R1: Performance, Efficiency, and Few-Shot Learning](https://arxiv.org/abs/2503.11655) — First comprehensive evaluation of DeepSeek-R1 (671B + distilled variants) vs GPT-4o/GPT-4o-mini for SA, highlighting few-shot efficiency and transparent reasoning traces; see [Reasoning Models](#reasoning-models-for-sentiment-analysis) for details. [[IEEE version]](https://ieeexplore.ieee.org/document/11181065) 2025.
+
+* [Self-Consistent Structured Generation for Dimensional ABSA (SCSG)](https://arxiv.org/abs/2603.01788) — SemEval-2026 Task 3 system: a LoRA-adapted LLM executed multiple times per instance, keeping only majority-consensus sentiment tuples; lifts average test cF1 from 55.52 to 56.50 (DimASTE) and 46.10 to 47.37 (DimASQP). arXiv March 2026.
 
 * [Enhancing Sentiment Classification and Irony Detection through Advanced Prompt Engineering Techniques](https://arxiv.org/abs/2601.08302) — Evaluates few-shot, CoT, and self-consistency prompting; CoT boosts irony detection by **46%** on Gemini-1.5-flash. arXiv January 2026.
 
@@ -836,8 +838,6 @@ classification task and provide a general solution for BERT fine-tuning
 * [Analyzing LLaMA3 Performance on Classification Using LoRA and QLoRA Techniques](https://www.mdpi.com/2076-3417/15/6/3087) — Comprehensive LoRA vs QLoRA ablation study. MDPI Applied Sciences March 2025.
 
 * [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) — Original QLoRA paper enabling 65B parameter fine-tuning on a single 48 GB GPU.
-
-* [Self-Consistent Structured Generation for Dimensional ABSA (SCSG)](https://arxiv.org/abs/2603.01788) — SemEval-2026 Task 3 system: LoRA-adapted LLM executed multiple times per instance, keeping only majority-consensus sentiment tuples; lifts average test cF1 from 55.52 to 56.50 (DimASTE) and 46.10 to 47.37 (DimASQP). arXiv March 2026.
 
 ### Explainability & Interpretability (2025-2026)
 
@@ -925,7 +925,7 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [Zero-Shot Cross-Domain Aspect-Based Sentiment Analysis via Domain-Contextualized Chain-of-Thought Reasoning](https://aclanthology.org/2025.findings-emnlp.245/) - ZeroABSA: unified zero-shot framework eliminating the need for labeled target-domain data via hybrid LLM-based data augmentation (filtered by vocabulary richness, semantic coherence, and sentiment/domain consistency) plus domain-aware chain-of-thought prompting (Findings of EMNLP 2025)
 
-* [SemEval-2026 Task 3: Dimensional Aspect-Based Sentiment Analysis (DimABSA)](https://arxiv.org/abs/2604.07066) - Task overview paper reformulating ABSA as continuous valence-arousal regression, with subtasks for regression (DimASR), triplet (DimASTE), and quadruplet (DimASQP) extraction, plus a DimStance track for public-issue stance. [[github]](https://github.com/DimABSA/DimABSA2026) (2026)
+* [SemEval-2026 Task 3: Dimensional Aspect-Based Sentiment Analysis (DimABSA)](https://arxiv.org/abs/2604.07066) - Task overview paper reformulating ABSA as continuous valence-arousal regression; see [Benchmark Frameworks](#benchmark-frameworks) for the full description, subtasks, and data links (2026)
 
 * [Zero-Shot to Full-Resource: Cross-lingual Transfer Strategies for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2604.26619) - Evaluation across seven languages (English, German, French, Dutch, Russian, Spanish, Czech) and four subtasks (ACD, ACSA, TASD, ASQP) under zero-resource, data-only, and full-resource settings; fine-tuned LLMs score highest overall, and the best cross-lingual transfer strategy is architecture-specific. Contributes two new German ABSA datasets, including GERest — the first German ASQP dataset (LREC 2026)
 
