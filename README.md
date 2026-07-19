@@ -2,17 +2,16 @@
 
 A curated list of awesome sentiment analysis frameworks, libraries, software (by language), and of course academic papers and methods. In addition NLP lib useful in sentiment analysis. Inspired by awesome-machine-learning.
 
-**Latest Update (April 2026)**: Comprehensive update covering 2021-2026 advances including:
-- Large Language Models (GPT-4, Claude, Llama, Gemini, Mixtral, DeepSeek)
-- Modern Transformers (RoBERTa, DistilBERT, ALBERT, XLM-RoBERTa, ModernBERT)
-- Multimodal Sentiment Analysis (vision-language models)
-- Multilingual and Cross-lingual Methods (Brand24/MMS — NeurIPS 2023, SemEval-2026)
-- **NEW: LLM Techniques** — Prompt Engineering, CoT, RAG, LoRA/QLoRA, RLHF, DPO
-- **NEW: LLM Evaluation & Benchmarks** — SentiEval, stability metrics, model leaderboard
-- **NEW: Explainable Sentiment Analysis** — SHAP, LIME, ModernBERT-XAI, attention viz
-- **NEW: LLM Reliability & Safety** — Hallucination, bias, uncertainty quantification
-- Recent Benchmarks and Datasets (2023-2026)
-- Domain-Specific Applications (Financial, Healthcare, Social Media)
+**Latest Update (July 2026)**: Research refresh covering late-2025 through mid-2026 work:
+- **NEW: Reasoning Models for Sentiment Analysis** — DeepSeek-R1 evaluation, when reasoning helps vs. hurts (task-complexity study), self-consistent structured generation
+- **SemEval-2026 Task 3 (DimABSA)** — dimensional valence-arousal ABSA: task paper, data repository, and first system papers
+- **New ABSA work** — Arctic-ABSA (Snowflake), ZeroABSA (EMNLP 2025), multilingual ABSA evaluation with new German ASQP datasets (LREC 2026)
+- **Low-resource & cross-lingual** — TriLex lexicon expansion for African languages, Bengali-English cross-lingual sentiment-bias audit
+- **Financial SA** — fine-tuned lightweight open LLMs (Qwen3/Llama3 8B) outperforming FinBERT
+- **Multimodal** — QA-MoE quality-aware mixture-of-experts for robust multimodal SA
+- WASSA 2026 and updated workshop links
+
+Previous update (April 2026) added: LLMs (GPT-4, Claude, Llama, Gemini, Mixtral, DeepSeek), modern transformers (RoBERTa → ModernBERT), multimodal and multilingual methods (Brand24/MMS — NeurIPS 2023), LLM techniques (prompting, CoT, RAG, LoRA/QLoRA, RLHF, DPO), LLM evaluation & benchmarks, explainable SA, LLM reliability & safety, and recent datasets (2023-2026).
 
 If you want to contribute to this list (please do), send me a pull request or contact me [@luk_augustyniak](https://twitter.com/luk_augustyniak)
 
@@ -40,7 +39,7 @@ If you want to contribute to this list (please do), send me a pull request or co
         - [Hybrid Pretrained / Multi-paradigm Architectures (2023-2025)](#hybrid-architectures-2023-2025)
 - [Multimodal Sentiment Analysis](#multimodal-sentiment-analysis)
     - [Overview](#overview)
-    - [Recent Models and Frameworks (2024-2025)](#recent-models-and-frameworks-2024-2025)
+    - [Recent Models and Frameworks (2024-2026)](#recent-models-and-frameworks-2024-2026)
     - [Multimodal LLMs for Sentiment Analysis](#multimodal-llms-for-sentiment-analysis)
     - [Key Research Findings (2024-2025)](#key-research-findings-2024-2025)
     - [Applications](#applications)
@@ -55,6 +54,7 @@ If you want to contribute to this list (please do), send me a pull request or co
     - [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
     - [Parameter-Efficient Fine-Tuning (PEFT)](#parameter-efficient-fine-tuning-peft)
     - [Instruction Tuning & Alignment](#instruction-tuning--alignment)
+    - [Reasoning Models for Sentiment Analysis](#reasoning-models-for-sentiment-analysis)
 - [LLM Evaluation & Benchmarks for Sentiment Analysis](#llm-evaluation--benchmarks-for-sentiment-analysis)
     - [Benchmark Frameworks](#benchmark-frameworks)
     - [Evaluation Metrics](#evaluation-metrics)
@@ -76,10 +76,10 @@ If you want to contribute to this list (please do), send me a pull request or co
     - [Reliability, Safety & Evaluation (2025-2026)](#reliability-safety--evaluation-2025-2026)
     - [RAG & Retrieval Methods (2024-2026)](#rag--retrieval-methods-2024-2026)
     - [Transformer Models and RoBERTa (2023-2025)](#transformer-models-and-roberta-2023-2025)
-    - [Multimodal Sentiment Analysis (2024-2025)](#multimodal-sentiment-analysis-2024-2025)
-    - [Multilingual and Cross-lingual Sentiment Analysis (2024-2025)](#multilingual-and-cross-lingual-sentiment-analysis-2024-2025)
-    - [Aspect-Based Sentiment Analysis (2024-2025)](#aspect-based-sentiment-analysis-2024-2025)
-    - [Domain-Specific Applications (2024-2025)](#domain-specific-applications-2024-2025)
+    - [Multimodal Sentiment Analysis (2024-2026)](#multimodal-sentiment-analysis-2024-2026)
+    - [Multilingual and Cross-lingual Sentiment Analysis (2024-2026)](#multilingual-and-cross-lingual-sentiment-analysis-2024-2026)
+    - [Aspect-Based Sentiment Analysis (2024-2026)](#aspect-based-sentiment-analysis-2024-2026)
+    - [Domain-Specific Applications (2024-2026)](#domain-specific-applications-2024-2026)
     - [Neural Network based Models](#neural-network-based-models)
     - [Lexicon-based Ensembles](#lexicon-based-ensembles)
 - [Tutorials](#tutorials)
@@ -372,7 +372,10 @@ Multimodal sentiment analysis combines text, images, video, and audio to underst
 * Vision-language models demonstrate remarkable potential by integrating visual and textual information to enhance sentiment classification accuracy
 * Critical challenges include capturing key information across modalities, achieving cross-modal alignment, and narrowing the semantic gap between image and text
 
-### Recent Models and Frameworks (2024-2025)
+### Recent Models and Frameworks (2024-2026)
+
+* **QA-MoE (Quality-Aware Mixture-of-Experts)** - Robust multimodal sentiment analysis that models per-modality reliability on a **continuous spectrum** — unifying missing and quality-degraded modalities instead of treating them as discrete cases. Self-supervised aleatoric uncertainty estimation guides expert routing to suppress error propagation from unreliable modalities; a single trained checkpoint handles varying reliability conditions ("One-Checkpoint-for-All")
+    [[paper]](https://arxiv.org/abs/2604.05704) (2026)
 
 * **Sentiment Analysis Engine (SAE)** - End-to-end multimodal model addressing challenges in capturing emotional changes across modalities
     [[paper]](https://dl.acm.org/doi/10.1145/3708359.3712106)
@@ -443,6 +446,12 @@ Analysis of sentiment across multiple languages and transfer of sentiment models
     [[paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC12192753/)
 
 * **Zero-shot and Few-shot Learning** - Small Multilingual Language Models (SMLMs) show superior zero-shot performance vs LLMs; LLMs demonstrate enhanced adaptive potential in few-shot settings (2024)
+
+* **TriLex — Low-Resource Lexicon Expansion** - Three-stage retrieval-augmented framework that expands sentiment lexicons for low-resource African languages (isiXhosa, isiZulu, Afrikaans, Sesotho, Sepedi, Ciluba, Shona) via corpus-based extraction, cross-lingual mapping, and RAG-driven lexical refinement; AfroXLMR with TriLex-enriched lexicons exceeds 80% F1 for isiXhosa and isiZulu
+    [[paper]](https://arxiv.org/abs/2512.02799) (2025)
+
+* **Cross-lingual Sentiment Misalignment Auditing** - Controlled benchmark of four multilingual transformers on dialect-stratified Bengali-English parallel pairs; finds a 28.7% sentiment-inversion rate in a distilled multilingual model and systematic "asymmetric empathy" (dampened/amplified affect vs the English counterpart); proposes Affective Stability metrics for cross-lingual benchmarks
+    [[paper]](https://aclanthology.org/2026.mellm-1.12/) (MeLLM 2026)
 
 ### Performance Benchmarks
 
@@ -578,6 +587,18 @@ Aligning LLMs to produce correctly-formatted sentiment labels and reliable confi
 
 * [Comprehensive Survey of LLM Alignment: RLHF, RLAIF, PPO, DPO and More](https://arxiv.org/abs/2407.16216) (2024)
 
+---
+
+### Reasoning Models for Sentiment Analysis
+
+Reasoning-focused LLMs (DeepSeek-R1, OpenAI o3-style models) bring explicit chain-of-thought traces to sentiment tasks — with benefits that strongly depend on task complexity.
+
+* **When does reasoning help?** — A large-scale empirical study (504 configurations, seven model families) finds explicit reasoning **hurts simple binary sentiment** (up to **−19.9 F1 pp**) but **helps fine-grained emotion recognition** (up to **+16.0 pp** on 27-class) [[paper]](https://arxiv.org/abs/2602.24060) (arXiv, Feb 2026).
+
+* **DeepSeek-R1 for explainable SA** — First comprehensive evaluation of DeepSeek-R1 (full 671B plus distilled variants) against GPT-4o/GPT-4o-mini on sentiment analysis: **91.39% F1** on 5-class sentiment and **99.31% accuracy** on binary with only 5 shots (authors report an ~8× few-shot-efficiency gain over GPT-4o); transparent step-by-step reasoning traces improve explainability at the cost of inference throughput [[arXiv]](https://arxiv.org/abs/2503.11655) [[IEEE]](https://ieeexplore.ieee.org/document/11181065) (2025).
+
+* **Self-Consistent Structured Generation (SCSG)** — Executes a LoRA-adapted LLM multiple times per instance and keeps only sentiment tuples reaching majority consensus across runs; with 15 executions, improves average test cF1 on SemEval-2026 DimABSA subtasks (55.52 → 56.50 on DimASTE, 46.10 → 47.37 on DimASQP) [[paper]](https://arxiv.org/abs/2603.01788) (arXiv, Mar 2026).
+
 [Back to Top](#table-of-contents)
 
 ## LLM Evaluation & Benchmarks for Sentiment Analysis
@@ -588,7 +609,7 @@ Aligning LLMs to produce correctly-formatted sentiment labels and reliable confi
 * **TruthfulQA** — Tests whether LLMs produce truthful answers; used to cross-reference hallucination rates in sentiment contexts.
 * **HallucinationEval** — Dedicated benchmark for measuring LLM hallucination across NLP tasks including sentiment.
 * **SemEval-2025 Task 10** — Multilingual characterization of subjectivity in news articles [[proceedings]](https://aclanthology.org/2025.semeval-1.331.pdf).
-* **SemEval-2026 Task 3** — Dimensional Aspect-Based Sentiment Analysis on Customer Reviews (valence-arousal framework). Co-located with ACL 2026, San Diego. [[call for participation]](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
+* **SemEval-2026 Task 3 — DimABSA (Dimensional Aspect-Based Sentiment Analysis)** — Reformulates ABSA as prediction of **continuous valence-arousal scores (1–9 scale)** instead of categorical polarity labels. Track A (DimABSA) has three subtasks: dimensional aspect sentiment regression (DimASR), triplet extraction (DimASTE), and quadruplet extraction (DimASQP); Track B (DimStance) extends the framework to public-issue discourse (political, energy, climate topics) by treating stance targets as aspects and casting stance detection as VA regression. Co-located with ACL 2026, San Diego. [[task paper]](https://arxiv.org/abs/2604.07066) [[proceedings]](https://aclanthology.org/2026.semeval-1.452) [[github]](https://github.com/DimABSA/DimABSA2026) [[DimStance datasets paper]](https://arxiv.org/abs/2601.21483) [[call for participation]](https://www.aclweb.org/portal/content/call-participation-semeval-2026-task-3-dimensional-aspect-based-sentiment-analysis-customer)
 
 ### Evaluation Metrics
 
@@ -611,6 +632,7 @@ Aligning LLMs to produce correctly-formatted sentiment labels and reliable confi
 | GPT-4.1 | ~75–78% | Varies by domain |
 | GPT-4o (zero-shot) | Best on financial SA | No CoT outperforms CoT variants [[paper]](https://dl.acm.org/doi/10.1145/3768292.3770341) |
 | DeepSeek V3 | 70% | Competitive open-weight model |
+| DeepSeek-R1 (5-shot) | 91.39% F1 (5-class) / 99.31% acc (binary) | Reasoning model; ~8× few-shot efficiency vs GPT-4o [[IEEE]](https://ieeexplore.ieee.org/document/11181065) |
 | LLaMA-3 + QLoRA | 91.2% on IMDB / 85.6% Twitter | Fine-tuned, not zero-shot |
 
 ### Explainable Sentiment Analysis Dataset
@@ -728,14 +750,17 @@ LLMs exhibit **12–18% higher accuracy degradation** on specialized domains (fi
 
 ### International Workshops
 
-* SemEval Challenges International Workshop on Semantic Evaluation 
-    [[site]](http://aclweb.org/aclwiki/index.php?title=SemEval_3)
-* SemEval 
+* **WASSA — Workshop on Computational Approaches to Subjectivity, Sentiment & Social Media Analysis** — The main recurring workshop for sentiment/affect research. WASSA 2026 (15th edition) was co-located with EACL 2026 in Rabat, Morocco (March 2026); no shared task this year, but a new special track on multilinguality and socio-cultural adaptation for lesser-resourced languages, with an LLM-centric call (generation, detection, and evaluation of subjectivity/sentiment/emotion with LLMs)
+    [[site]](https://workshop-wassa.github.io/)
+    [[proceedings]](https://aclanthology.org/volumes/2026.wassa-1/)
+
+* **SemEval — International Workshop on Semantic Evaluation**
+    [[2026 tasks]](https://semeval.github.io/SemEval2026/tasks.html) — including Task 3: Dimensional ABSA (see [Benchmark Frameworks](#benchmark-frameworks))
     [[2014]](http://alt.qcri.org/semeval2014/index.php?id=tasks)
     [[2015]](http://alt.qcri.org/semeval2015/index.php?id=tasks)
     [[2016]](http://alt.qcri.org/semeval2016/index.php?id=tasks)
     [[2017]](http://alt.qcri.org/semeval2017/index.php?id=tasks)
-    [[2018]](http://alt.qcri.org/semeval2018/) -- New challenge for 2018 year, waiting for confirmation about tasks etc.
+    [[2018]](http://alt.qcri.org/semeval2018/)
 
 [Back to Top](#table-of-contents)
 
@@ -765,6 +790,10 @@ authors conduct exhaustive experiments to investigate different fine-tuning meth
 classification task and provide a general solution for BERT fine-tuning
 
 ### Prompt Engineering & LLM Methods (2025-2026)
+
+* [Task Complexity Matters: An Empirical Study of Reasoning in LLMs for Sentiment Analysis](https://arxiv.org/abs/2602.24060) — 504 configurations across seven model families on binary, five-class, and 27-class datasets; explicit reasoning degrades binary sentiment by up to −19.9 F1 pp but improves 27-class emotion recognition by up to +16.0 pp. arXiv February 2026.
+
+* [Explainable Sentiment Analysis with DeepSeek-R1: Performance, Efficiency, and Few-Shot Learning](https://arxiv.org/abs/2503.11655) — First comprehensive evaluation of DeepSeek-R1 (671B + distilled variants) vs GPT-4o/GPT-4o-mini for SA; 91.39% F1 (5-class) and 99.31% accuracy (binary) with 5 shots, with transparent reasoning traces. [[IEEE version]](https://ieeexplore.ieee.org/document/11181065) 2025.
 
 * [Enhancing Sentiment Classification and Irony Detection through Advanced Prompt Engineering Techniques](https://arxiv.org/abs/2601.08302) — Evaluates few-shot, CoT, and self-consistency prompting; CoT boosts irony detection by **46%** on Gemini-1.5-flash. arXiv January 2026.
 
@@ -807,6 +836,8 @@ classification task and provide a general solution for BERT fine-tuning
 * [Analyzing LLaMA3 Performance on Classification Using LoRA and QLoRA Techniques](https://www.mdpi.com/2076-3417/15/6/3087) — Comprehensive LoRA vs QLoRA ablation study. MDPI Applied Sciences March 2025.
 
 * [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) — Original QLoRA paper enabling 65B parameter fine-tuning on a single 48 GB GPU.
+
+* [Self-Consistent Structured Generation for Dimensional ABSA (SCSG)](https://arxiv.org/abs/2603.01788) — SemEval-2026 Task 3 system: LoRA-adapted LLM executed multiple times per instance, keeping only majority-consensus sentiment tuples; lifts average test cF1 from 55.52 to 56.50 (DimASTE) and 46.10 to 47.37 (DimASQP). arXiv March 2026.
 
 ### Explainability & Interpretability (2025-2026)
 
@@ -854,7 +885,9 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [Generalizing sentiment analysis: a review of progress, challenges, and emerging directions](https://link.springer.com/article/10.1007/s13278-025-01461-8) - Comprehensive review covering advances from traditional ML to Transformers and hybrid architectures (2025)
 
-### Multimodal Sentiment Analysis (2024-2025)
+### Multimodal Sentiment Analysis (2024-2026)
+
+* [QA-MoE: Towards a Continuous Reliability Spectrum with Quality-Aware Mixture of Experts for Robust Multimodal Sentiment Analysis](https://arxiv.org/abs/2604.05704) - Quality-aware MoE that estimates per-modality reliability via self-supervised aleatoric uncertainty and routes experts accordingly; one checkpoint handles missing and degraded modalities across reliability conditions (2026)
 
 * [Large language models meet text-centric multimodal sentiment analysis: a survey](https://link.springer.com/article/10.1007/s11432-024-4593-8) - Comprehensive survey on applying LLMs to multimodal sentiment analysis (2024)
 
@@ -866,7 +899,7 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [SAE: A Multimodal Sentiment Analysis Large Language Model](https://dl.acm.org/doi/10.1145/3708359.3712106) - End-to-end LLM for multimodal sentiment analysis (2025)
 
-### Multilingual and Cross-lingual Sentiment Analysis (2024-2025)
+### Multilingual and Cross-lingual Sentiment Analysis (2024-2026)
 
 * [**Massively Multilingual Corpus of Sentiment Datasets and Multi-faceted Sentiment Classification Benchmark**](https://arxiv.org/abs/2306.07902) - Łukasz Augustyniak, Szymon Woźniak, Marcin Gruza, Piotr Gramacki, Krzysztof Rajda, Mikołaj Morzy, Tomasz Kajdanowicz. **NeurIPS 2023 Datasets and Benchmarks Track**. [[NeurIPS proceedings]](https://proceedings.neurips.cc/paper_files/paper/2023/hash/7945ab41f2aada1247a7c95e75cdf6c8-Abstract-Datasets_and_Benchmarks.html) [[PDF]](https://proceedings.neurips.cc/paper_files/paper/2023/file/7945ab41f2aada1247a7c95e75cdf6c8-Paper-Datasets_and_Benchmarks.pdf) - **The most extensive open massively multilingual corpus** with 79 high-quality datasets covering 27 languages (6 language families) and 6.16M training samples. Presents multi-faceted sentiment classification benchmark summarizing hundreds of experiments on different base models, training objectives, dataset collections, and fine-tuning strategies. Addresses challenges in multilingual sentiment analysis with rich linguistic metadata including morphological, syntactic, and functional properties. Available on [HuggingFace](https://huggingface.co/datasets/Brand24/mms) with interactive [benchmark](https://huggingface.co/spaces/Brand24/mms_benchmark). [GitHub](https://github.com/Brand24-AI/mms_benchmark)
 
@@ -880,11 +913,23 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [The Model Arena for Cross-lingual Sentiment Analysis: A Comparative Study in the Era of Large Language Models](https://aclanthology.org/2024.wassa-1.12/) - Comparative study of LLMs vs SMLMs in cross-lingual settings (2024)
 
-### Aspect-Based Sentiment Analysis (2024-2025)
+* [TriLex: A Framework for Multilingual Sentiment Analysis in Low-Resource South African Languages](https://arxiv.org/abs/2512.02799) - Three-stage RAG-based framework (corpus extraction, cross-lingual mapping, lexical refinement) for African languages: isiXhosa, isiZulu, Afrikaans, Sesotho, Sepedi, Ciluba, Shona; AfroXLMR with enriched lexicons exceeds 80% F1 for isiXhosa/isiZulu (2025)
+
+* [Cross-Lingual Sentiment Misalignment: Auditing Multilingual Language Models for Inversion Risk, Dialectal Representation, and Affective Stability](https://aclanthology.org/2026.mellm-1.12/) - Dialect-stratified audit of four multilingual models on parallel Bengali-English pairs; reports a 28.7% sentiment-inversion rate for a distilled model, register-dependent "Modern Bias", and asymmetric affect transfer; advocates Affective Stability metrics (MeLLM 2026)
+
+### Aspect-Based Sentiment Analysis (2024-2026)
 
 * [A systematic review of aspect-based sentiment analysis: domains, methods, and trends](https://link.springer.com/article/10.1007/s10462-024-10906-z) - Comprehensive systematic review of ABSA methods and trends (2024)
 
-* [Large-Scale Aspect-Based Sentiment Analysis with Reasoning-Infused LLMs](https://arxiv.org/html/2601.03940) - Incorporating reasoning techniques into LLMs for ABSA (2025)
+* [Arctic-ABSA: Large-Scale Aspect-Based Sentiment Analysis with Reasoning-Infused LLMs](https://arxiv.org/abs/2601.03940) - Snowflake's collection of ABSA models trained on public plus synthetic data (~20× larger than SemEval14), injecting reasoning via Chain-of-Thought fine-tuning and a novel reasoning-pretraining technique for encoder-only models; the 395M ModernBERT-large encoder and 8B decoder reportedly beat GPT-4o and Claude 3.5 Sonnet by up to 10 accuracy points, setting new SOTA on SemEval14 (91.8% restaurants / 87.2% laptops) (arXiv, January 2026)
+
+* [Zero-Shot Cross-Domain Aspect-Based Sentiment Analysis via Domain-Contextualized Chain-of-Thought Reasoning](https://aclanthology.org/2025.findings-emnlp.245/) - ZeroABSA: unified zero-shot framework eliminating the need for labeled target-domain data via hybrid LLM-based data augmentation (filtered by vocabulary richness, semantic coherence, and sentiment/domain consistency) plus domain-aware chain-of-thought prompting (Findings of EMNLP 2025)
+
+* [SemEval-2026 Task 3: Dimensional Aspect-Based Sentiment Analysis (DimABSA)](https://arxiv.org/abs/2604.07066) - Task overview paper reformulating ABSA as continuous valence-arousal regression, with subtasks for regression (DimASR), triplet (DimASTE), and quadruplet (DimASQP) extraction, plus a DimStance track for public-issue stance. [[github]](https://github.com/DimABSA/DimABSA2026) (2026)
+
+* [Zero-Shot to Full-Resource: Cross-lingual Transfer Strategies for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2604.26619) - Evaluation across seven languages (English, German, French, Dutch, Russian, Spanish, Czech) and four subtasks (ACD, ACSA, TASD, ASQP) under zero-resource, data-only, and full-resource settings; fine-tuned LLMs score highest overall, and the best cross-lingual transfer strategy is architecture-specific. Contributes two new German ABSA datasets, including GERest — the first German ASQP dataset (LREC 2026)
+
+* [Multi-domain Multilingual Sentiment Analysis in Industry: Predicting Aspect-based Opinion Quadruples](https://arxiv.org/abs/2505.10389) - White & Shimorina. Industry-deployed system for aspect-based opinion quadruple extraction (aspect category, polarity, target, opinion expression) across multiple domains and languages; a single fine-tuned multi-domain LLM matches specialized single-domain models while reducing operational complexity, with practical guidance on handling non-extractive (hallucinated) predictions (2025)
 
 * [Aspect-based Sentiment Analysis via Synthetic Image Generation](https://aclanthology.org/2025.findings-emnlp.1190/) - Novel approach generating sentimental images for ABSA (EMNLP 2025)
 
@@ -894,7 +939,9 @@ classification task and provide a general solution for BERT fine-tuning
 
 * [Local interpretation of deep learning models for Aspect-Based Sentiment Analysis](https://www.sciencedirect.com/science/article/pii/S0952197624021067) - Addressing interpretability in deep learning ABSA models (2025)
 
-### Domain-Specific Applications (2024-2025)
+### Domain-Specific Applications (2024-2026)
+
+* [Fine-tuning of lightweight large language models for sentiment classification on heterogeneous financial textual data](https://arxiv.org/abs/2512.00946) - Benchmarks FinBERT against DeepSeek-LLM 7B, Llama3 8B Instruct, and Qwen3 8B on five public financial datasets (FinancialPhraseBank, FiQA, Gold News, Twitter, Chinese Finance Sentiment); fine-tuned Qwen3 8B and Llama3 8B perform best in most scenarios even with only 5% of training data, positioning lightweight open LLMs as cost-effective FinBERT alternatives (2025)
 
 * [An overview of model uncertainty and variability in LLM-based sentiment analysis: challenges, mitigation strategies, and the role of explainability](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1609097/full) - LLM challenges in specialized domains (finance, healthcare, legal) (2025)
 
