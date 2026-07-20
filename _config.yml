@@ -1,0 +1,15 @@
+title: Awesome Sentiment Analysis
+description: A curated list of sentiment analysis frameworks, libraries, datasets, papers, and methods — from lexicons to LLMs
+theme: jekyll-theme-cayman
+show_downloads: false
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - .gitignore
