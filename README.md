@@ -995,12 +995,10 @@ classification task and provide a general solution for BERT fine-tuning
 ## API
 
 * [AlchemyAPI - IBM Watson](https://www.ibm.com/watson/developercloud/)
-* [www.sentimentanalysisonline](http://www.sentimentanalysisonline.com)
-* [MeaningCloud](https://www.meaningcloud.com/products/sentiment-analysis)
 * [texsie](http://texsie.stride.ai)
 * [Google Cloud API](https://cloud.google.com/natural-language/docs/sentiment-tutorial)
 * [Microsoft Azure Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/)
-* [Aylien](https://developer.aylien.com/text-api-demo)
+* [APITube](https://apitube.io/features/sentiment-analysis)
 * [Amazon Comprehend](https://aws.amazon.com/comprehend/features/)
 * [MS Cognitive Services](https://azure.microsoft.com/en-gb/services/cognitive-services/text-analytics/)
 
