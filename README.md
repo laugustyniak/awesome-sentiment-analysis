@@ -1003,6 +1003,7 @@ classification task and provide a general solution for BERT fine-tuning
 * [Aylien](https://developer.aylien.com/text-api-demo)
 * [Amazon Comprehend](https://aws.amazon.com/comprehend/features/)
 * [MS Cognitive Services](https://azure.microsoft.com/en-gb/services/cognitive-services/text-analytics/)
+* [jevos](https://github.com/feder-cr/jev) - open-source (MIT), CPU-only 1B model exposing a yes/no decision HTTP API; send text plus a yes/no question and get P(yes) back in a single forward pass, usable for sentiment or intent classification
 
 [Back to Top](#table-of-contents)
 
