@@ -994,6 +994,8 @@ classification task and provide a general solution for BERT fine-tuning
 
 ## API
 
+* [Trends MCP](https://github.com/trendsmcp-ai/Trends-MCP) - MCP server and REST API with a news-sentiment feed.
+
 * [AlchemyAPI - IBM Watson](https://www.ibm.com/watson/developercloud/)
 * [www.sentimentanalysisonline](http://www.sentimentanalysisonline.com)
 * [MeaningCloud](https://www.meaningcloud.com/products/sentiment-analysis)
